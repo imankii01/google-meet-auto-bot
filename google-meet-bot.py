@@ -108,7 +108,7 @@ class JoinGoogleMeetAsGuest:
 
 # Main function
 def main():
-    meet_link = "https://meet.google.com/nrr-ioot-iud"  # Replace with your actual meet link
+    meet_link = "https://meet.google.com/vmb-zfao-sew"  # Replace with your actual meet link
     bot = JoinGoogleMeetAsGuest(meet_link)
     bot.join_meet()
     bot.close()
