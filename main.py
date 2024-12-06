@@ -2,6 +2,7 @@ import os
 import random
 import time
 import logging
+import threading
 from datetime import datetime
 from flask import Flask, request, jsonify,Response
 from selenium import webdriver
@@ -91,23 +92,39 @@ class JoinGoogleMeetAsGuest:
             logger.error(f"Failed to initialize browser: {e}")
             raise
 
-    def debug_screenshot(self, step_name):
+    def debug_screenshot(self, step_name,meet_link):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        screenshot_path = f"./screenshots/{step_name}_{timestamp}.png"
+        screenshot_path = f"./screenshots/{step_name}_{meet_link}_{timestamp}.png"
         os.makedirs("./screenshots", exist_ok=True)
         self.driver.save_screenshot(screenshot_path)
         logger.info(f"Screenshot saved: {screenshot_path}")
+        
+    def capture_screenshots_periodically(self, meet_link):
+        """Capture screenshots every 4 seconds with meeting ID and timestamp as filename."""
+        meet_id = meet_link.split('/')[-1]  # Extract the meeting ID from the link
+        while True:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            screenshot_path = f"./screenshots/{meet_id}_{timestamp}.png"
+            os.makedirs("./screenshots", exist_ok=True)
+            self.driver.save_screenshot(screenshot_path)
+            logger.info(f"Screenshot saved: {screenshot_path}")
+            time.sleep(4)  # Wait for 2 seconds before taking the next screenshot
 
     def join_meet(self, meet_link):
         try:
             logger.info(f"Navigating to Google Meet link: {meet_link}")
             self.driver.get(meet_link)
             random_sleep(2, 5)  # Simulate realistic wait time
-            self.debug_screenshot("page_loaded")
+            self.debug_screenshot("page_loaded",meet_link)
+            
+            # Start capturing screenshots periodically
+            screenshot_thread = threading.Thread(target=self.capture_screenshots_periodically, args=(meet_link,))
+            screenshot_thread.daemon = True  # This will allow the thread to exit when the main program exits
+            screenshot_thread.start()
 
             # Handle "Join as Guest" button
             self.click_button('button[jsname="Qx7uuf"]', "Join as Guest")
-            self.debug_screenshot("join_as_guest_clicked")
+            self.debug_screenshot("join_as_guest_clicked",meet_link)
 
             self.handle_modals()
             self.turn_off_mic_cam()
@@ -124,7 +141,7 @@ class JoinGoogleMeetAsGuest:
             logger.error(f"An error occurred during the meeting join process: {e}")
             return {"status": "error", "message": str(e)}
         finally:
-            self.debug_screenshot("final_state")
+            self.debug_screenshot("final_state",meet_link)
             self.close()
 
     def click_button(self, selector, description):
