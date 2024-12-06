@@ -92,23 +92,29 @@ class JoinGoogleMeetAsGuest:
             logger.error(f"Failed to initialize browser: {e}")
             raise
 
-    def debug_screenshot(self, step_name,meet_link):
+    def debug_screenshot(self, step_name, meet_link):
+        """Capture a screenshot for debugging with meet_link in filename."""
+        meet_id = meet_link.split('/')[-1]  # Extract the meeting ID from the link
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        screenshot_path = f"./screenshots/{step_name}_{meet_link}_{timestamp}.png"
-        os.makedirs("./screenshots", exist_ok=True)
+        # Create a folder for the meeting if it doesn't exist
+        folder_path = f"./screenshots/{meet_id}"
+        os.makedirs(folder_path, exist_ok=True)
+        screenshot_path = f"{folder_path}/{step_name}_{meet_id}_{timestamp}.png"
         self.driver.save_screenshot(screenshot_path)
         logger.info(f"Screenshot saved: {screenshot_path}")
-        
+
     def capture_screenshots_periodically(self, meet_link):
         """Capture screenshots every 4 seconds with meeting ID and timestamp as filename."""
         meet_id = meet_link.split('/')[-1]  # Extract the meeting ID from the link
+        folder_path = f"./screenshots/{meet_id}"
+        os.makedirs(folder_path, exist_ok=True)  # Ensure the meeting folder exists
+        
         while True:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            screenshot_path = f"./screenshots/{meet_id}_{timestamp}.png"
-            os.makedirs("./screenshots", exist_ok=True)
+            screenshot_path = f"{folder_path}/{meet_id}_{timestamp}.png"
             self.driver.save_screenshot(screenshot_path)
             logger.info(f"Screenshot saved: {screenshot_path}")
-            time.sleep(4)  # Wait for 2 seconds before taking the next screenshot
+            time.sleep(4)  # Wait for 4 seconds before taking the next screenshot
 
     def join_meet(self, meet_link):
         try:
