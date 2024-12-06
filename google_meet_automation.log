@@ -1835,3 +1835,629 @@ Stacktrace:
 19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
 20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
 
+2024-12-06 20:58:31,827 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:32,853 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:33,859 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:34,865 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:35,871 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:36,876 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:37,882 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:38,887 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:39,894 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:40,900 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:41,903 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:42,909 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:43,915 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:44,922 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:45,926 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:46,932 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:47,939 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:48,945 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:49,949 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:50,955 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:51,962 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:52,966 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:53,973 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:54,980 - ERROR - continuous_modal_handler - Error in modal handler: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d213e82 chromedriver + 6696578
+1   chromedriver                        0x000000010d20bc9a chromedriver + 6663322
+2   chromedriver                        0x000000010cc13e3e chromedriver + 405054
+3   chromedriver                        0x000000010cbe91fa chromedriver + 229882
+4   chromedriver                        0x000000010cc91f9d chromedriver + 921501
+5   chromedriver                        0x000000010ccabde4 chromedriver + 1027556
+6   chromedriver                        0x000000010cc89613 chromedriver + 886291
+7   chromedriver                        0x000000010cc56950 chromedriver + 678224
+8   chromedriver                        0x000000010cc5734e chromedriver + 680782
+9   chromedriver                        0x000000010d1e1770 chromedriver + 6489968
+10  chromedriver                        0x000000010d1e4219 chromedriver + 6500889
+11  chromedriver                        0x000000010d1e3d3b chromedriver + 6499643
+12  chromedriver                        0x000000010d1e46a5 chromedriver + 6502053
+13  chromedriver                        0x000000010d1cc524 chromedriver + 6403364
+14  chromedriver                        0x000000010d1e498f chromedriver + 6502799
+15  chromedriver                        0x000000010d1bd954 chromedriver + 6342996
+16  chromedriver                        0x000000010d1fc378 chromedriver + 6599544
+17  chromedriver                        0x000000010d1fc535 chromedriver + 6599989
+18  chromedriver                        0x000000010d20b868 chromedriver + 6662248
+19  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-06 20:58:55,290 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-06 20:58:55,368 - INFO - _log -  * Restarting with stat
