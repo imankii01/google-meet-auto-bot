@@ -7,7 +7,6 @@ from flask import Flask, request, jsonify,Response
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.proxy import Proxy, ProxyType
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -56,16 +55,6 @@ def health_check():
         
         return Response(response, status=500, content_type='text/html')
 
-# Function to generate a random user-agent
-def get_random_user_agent():
-    user_agents = [
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/89.0 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/91.0.864.64 Safari/537.36"
-    ]
-    return random.choice(user_agents)
-
 # Random delay function to mimic human behavior
 def random_sleep(min_seconds=1, max_seconds=3):
     time.sleep(random.uniform(min_seconds, max_seconds))
@@ -79,26 +68,21 @@ def move_mouse_randomly(driver):
 
 # Class to automate the process of joining Google Meet as a guest
 class JoinGoogleMeetAsGuest:
-    def __init__(self, proxy=None):
+    def __init__(self):
         logger.info("Initializing headless browser...")
 
         options = Options()
         
-        # Enable headless mode
-        options.add_argument("--headless")
-        options.add_argument("--disable-gpu")  # Disable GPU (recommended in headless mode)
-        options.add_argument("--no-sandbox")  # Disable sandbox (recommended in headless mode)
-        options.add_argument("--disable-dev-shm-usage")
-        options.add_argument("--window-size=1920,1080")
-        options.add_argument("--incognito")  # Open browser in incognito mode
-        options.add_argument("--ignore-certificate-errors")
         options.add_argument("--disable-blink-features=AutomationControlled")
-        options.add_argument(f"user-agent={get_random_user_agent()}")  # Random User-Agent
-        options.add_experimental_option("excludeSwitches", ["enable-automation", "enable-logging"])
-        options.add_experimental_option("useAutomationExtension", False)
+        options.add_argument("--start-maximized")
+        # options.add_argument("--headless=new")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--window-size=1920,1080")
+        options.add_argument("--disable-blink-features=AutomationControlled") 
+        options.add_experimental_option("excludeSwitches", ["enable-automation"])
 
-        if proxy:
-            options.add_argument(f'--proxy-server={proxy}')  # Optional: Add proxy if needed
 
         try:
             self.driver = webdriver.Chrome(options=options)
@@ -207,13 +191,12 @@ class JoinGoogleMeetAsGuest:
 def join_meet():
     data = request.json
     meet_link = data.get("meet_link")
-    proxy = data.get("proxy")  # Optional proxy parameter
 
     if not meet_link:
         logger.error("Missing 'meet_link' in request body.")
         return jsonify({"status": "error", "message": "Missing 'meet_link' in request body"}), 400
 
-    bot = JoinGoogleMeetAsGuest(proxy=proxy)
+    bot = JoinGoogleMeetAsGuest()
     result = bot.join_meet(meet_link)
     return jsonify(result)
 
