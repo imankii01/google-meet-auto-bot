@@ -25,21 +25,21 @@ class JoinGoogleMeetAsGuest:
         options = Options()
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument("--start-maximized")
-        options.add_argument("--headless")
+        # options.add_argument("--headless=new")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--disable-gpu")
         options.add_argument("--window-size=1920,1080")
-        options.add_argument("--remote-debugging-port=9222")  # For debugging
-        options.add_argument(
-            "--use-fake-ui-for-media-stream"
-        )  # Bypass mic/camera permission
-        options.add_argument("--disable-blink-features=AutomationControlled")
+        # options.add_argument("--remote-debugging-port=9222")  # For debugging
+        # options.add_argument(
+        #     "--use-fake-ui-for-media-stream"
+        # )  # Bypass mic/camera permission
+        # options.add_argument("--disable-blink-features=AutomationControlled")
 
         # Set user-agent to mimic a real browser
-        options.add_argument(
-            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-        )
+        # options.add_argument(
+        #     "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+        # )
 
         try:
             self.driver = webdriver.Chrome(options=options)
@@ -185,4 +185,4 @@ def join_meet():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    app.run(host="0.0.0.0", port=5000, debug=True),
