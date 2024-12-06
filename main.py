@@ -30,6 +30,15 @@ class JoinGoogleMeetAsGuest:
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--disable-gpu")
         options.add_argument("--window-size=1920,1080")
+        options.addArguments("--incognito")
+        options.addArguments("--ignore-certificate-errors")
+        options.addArguments("--remote-allow-origins=*")
+        options.addArguments("--disable-blink-features=AutomationControlled")
+        options.add_argument("--disable-blink-features=AutomationControlled") 
+        options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        options.add_experimental_option("useAutomationExtension", False) 
+        # options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" })
+        options.setExperimentalOption("useAutomationExtension", false)
         # options.add_argument("--remote-debugging-port=9222")  # For debugging
         # options.add_argument(
         #     "--use-fake-ui-for-media-stream"
