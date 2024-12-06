@@ -146,95 +146,72 @@ class GoogleMeetAutomation:
             modal_thread.start()
             
             # Wait for page to load completely
+            time.sleep(3)
+            
+            # Enhanced name input handling
+            try:
+                # Use JavaScript to enter name (bypassing potential overlay issues)
+                name_input = WebDriverWait(self.driver, 10).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, 'input[jsname="YPqjbf"]'))
+                )
+                self.driver.execute_script("arguments[0].value = 'Mentorpal.ai';", name_input)
+                
+                # Force trigger input events
+                self.driver.execute_script("""
+                    var input = arguments[0];
+                    var event = new Event('input', { bubbles: true });
+                    input.dispatchEvent(event);
+                """, name_input)
+            except Exception as e:
+                logger.warning(f"Could not enter guest name: {e}")
+            
+            # Advanced join button interaction
+            try:
+                # Try multiple strategies to click join button
+                join_selectors = [
+                    'button[jsname="Qx7uuf"]',  # Primary selector
+                    'div[jsname="GGAcbc"]',     # Alternative selector
+                    '.UywwFc-LgbsSe'            # Class-based selector
+                ]
+                
+                join_success = False
+                for selector in join_selectors:
+                    try:
+                        # Use JavaScript click method
+                        join_button = WebDriverWait(self.driver, 5).until(
+                            EC.presence_of_element_located((By.CSS_SELECTOR, selector))
+                        )
+                        
+                        # Multiple interaction strategies
+                        self.driver.execute_script("arguments[0].click();", join_button)
+                        
+                        # Wait and verify
+                        if self._check_meeting_join():
+                            join_success = True
+                            break
+                        
+                        # Backup: ActionChains click
+                        ActionChains(self.driver).move_to_element(join_button).click().perform()
+                        
+                        if self._check_meeting_join():
+                            join_success = True
+                            break
+                    except Exception as inner_e:
+                        logger.warning(f"Join attempt with {selector} failed: {inner_e}")
+                
+                if not join_success:
+                    raise Exception("Could not join meeting after multiple attempts")
+            
+            except Exception as e:
+                logger.error(f"Meeting join button click failed: {e}")
+                raise
+            
+            # Wait for page to load completely
             time.sleep(5)
-            
-            # Enhanced name input handling with multiple strategies
-            name_input_selectors = [
-                'input[jsname="YPqjbf"]',  # Primary selector
-                'input[placeholder="Your name"]',  # Alternative selector
-                'input[aria-label="Your name"]'  # Another possible selector
-            ]
-            
-            name_entered = False
-            for selector in name_input_selectors:
-                try:
-                    name_input = WebDriverWait(self.driver, 10).until(
-                        EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-                    )
-                    # Multiple ways to set name
-                    name_input.clear()
-                    name_input.send_keys("Mentorpal.ai")
-                    self.driver.execute_script("arguments[0].value = 'Mentorpal.ai';", name_input)
-                    
-                    # Force trigger input events
-                    self.driver.execute_script("""
-                        var input = arguments[0];
-                        var event = new Event('input', { bubbles: true });
-                        input.dispatchEvent(event);
-                        var changeEvent = new Event('change', { bubbles: true });
-                        input.dispatchEvent(changeEvent);
-                    """, name_input)
-                    
-                    name_entered = True
-                    break
-                except Exception as e:
-                    logger.warning(f"Name input failed with selector {selector}: {e}")
-            
-            if not name_entered:
-                logger.warning("Could not enter name, proceeding anyway")
-            
-            # Advanced join button interaction with multiple strategies
-            join_selectors = [
-                'button[jsname="Qx7uuf"]',      # Primary join button
-                'button[data-idom-class="nCP5yc"]',  # Alternative join button
-                'div[jsname="GGAcbc"]',         # Another join button
-                '.UywwFc-LgbsSe',               # Class-based join button
-                'button[jscontroller="soHxf"]'  # Additional selector
-            ]
-            
-            join_success = False
-            for selector in join_selectors:
-                try:
-                    # Wait for element and try multiple interaction methods
-                    join_button = WebDriverWait(self.driver, 10).until(
-                        EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-                    )
-                    
-                    # Try JavaScript click
-                    self.driver.execute_script("arguments[0].click();", join_button)
-                    
-                    # Wait a moment after click
-                    time.sleep(2)
-                    
-                    # Verify meeting join
-                    if self._check_meeting_join():
-                        join_success = True
-                        break
-                    
-                    # Backup: ActionChains click
-                    ActionChains(self.driver).move_to_element(join_button).click().perform()
-                    
-                    # Wait after ActionChains click
-                    time.sleep(2)
-                    
-                    if self._check_meeting_join():
-                        join_success = True
-                        break
-                    
-                except Exception as inner_e:
-                    logger.warning(f"Join attempt with {selector} failed: {inner_e}")
-            
-            if not join_success:
-                # Take a screenshot of the page for debugging
-                self.take_screenshot("join_failure", meet_link)
-                raise Exception("Could not join meeting after multiple attempts")
-            
             # Mute mic and turn off camera
             self.toggle_audio_video()
-            
-            # Wait for page to load
+            print("Start Counting off caption")
             time.sleep(5)
-            
             # Enable captions
             self.enable_captions()
             
@@ -249,29 +226,22 @@ class GoogleMeetAutomation:
         except Exception as e:
             logger.error(f"Meeting join failed: {e}")
             logger.error(traceback.format_exc())
+            # Wait for page to load completely
+            time.sleep(5)
+            # Mute mic and turn off camera
+            self.toggle_audio_video()
+            print("Start Counting off caption")
+            time.sleep(5)
+            # Enable captions
+            self.enable_captions()
             
-            # Last resort: attempt to join and stay in meeting
-            try:
-                # Mute mic and turn off camera
-                self.toggle_audio_video()
-                
-                # Wait for page to load
-                time.sleep(5)
-                
-                # Enable captions
-                self.enable_captions()
-                
-                # Take screenshot
-                self.take_screenshot("meeting_joined_fallback", meet_link)
-                
-                # Run meeting for specified duration
-                time.sleep(meeting_duration * 60)
-                
-                return {"status": "success", "message": "Meeting joined successfully (fallback method)"}
+            # Take screenshot after joining
+            self.take_screenshot("meeting_joined", meet_link)
             
-            except Exception as fallback_e:
-                logger.error(f"Fallback method failed: {fallback_e}")
-                return {"status": "error", "message": str(e)}
+            # Run meeting for specified duration
+            time.sleep(meeting_duration * 60)
+            
+            return {"status": "success", "message": "Meeting joined successfully"}
         
         finally:
             # Stop modal handling thread
@@ -279,6 +249,11 @@ class GoogleMeetAutomation:
             
             # Take final screenshot
             self.take_screenshot("final_state", meet_link)
+            
+            # Leave meeting if still connected
+            # self.leave_meeting()
+
+
 
     def _check_meeting_join(self):
         """
@@ -313,51 +288,27 @@ class GoogleMeetAutomation:
 
     def enable_captions(self):
         """Enable captions in the meeting"""
-        caption_selectors = [
-            'div[jsname="hFkX3e"]',  # Primary caption button
-            'button[aria-label="Turn on captions"]',  # Alternative selector
-            'div[data-tooltip="Turn on captions"]',  # Another possible selector
-            'button[jscontroller="soHxf"][jsname="yxFKC"]'  # Additional selector
-        ]
-
-        for selector in caption_selectors:
+        try:
+            # Wait for and click the captions button
+            captions_button = WebDriverWait(self.driver, 10).until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, 'div[jsname="hFkX3e"]'))
+            )
+            captions_button.click()
+            logger.info("Captions button clicked.")
+    
+            # Optional: Confirm if a second click is required
             try:
-                # Wait for and click the captions button using multiple methods
-                captions_button = WebDriverWait(self.driver, 10).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, selector))
+                caption_confirm = WebDriverWait(self.driver, 5).until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[jsname="r8qRAd"]'))
                 )
-                
-                # Try multiple interaction methods
-                try:
-                    # JavaScript click
-                    self.driver.execute_script("arguments[0].click();", captions_button)
-                except:
-                    # Fallback to Selenium click
-                    captions_button.click()
-                
-                logger.info(f"Captions button clicked with selector: {selector}")
-                
-                # Wait a moment after clicking
-                time.sleep(2)
-                
-                # Optional: Try to handle confirmation dialog
-                try:
-                    caption_confirm_selectors = [
-                        'button[jsname="r8qRAd"]',  # Confirmation button
-                        'button[data-idom-class="nCP5yc"]'  # Alternative confirm button
-                    ]
-                    
-                    for confirm_selector in caption_confirm_selectors:
-                        try:
-                            caption_confirm = WebDriverWait(self.driver, 3).until(
-                                EC.element_to_be_clickable((By.CSS_SELECTOR, confirm_selector))
-                            )
-                            caption_confirm.click()
-                            logger.info("Captions confirmation completed.")
-                            break
-                
-            
-        
+                caption_confirm.click()
+                logger.info("Confirmation for captions completed.")
+            except Exception as e:
+                logger.warning("Confirmation button not required or not clickable. Skipping...")
+    
+        except Exception as e:
+            logger.error(f"Failed to enable captions: {str(e)}")
+
 
     def leave_meeting(self):
         """Leave the Google Meet"""
