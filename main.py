@@ -60,13 +60,6 @@ def health_check():
 def random_sleep(min_seconds=1, max_seconds=3):
     time.sleep(random.uniform(min_seconds, max_seconds))
 
-# Function to simulate mouse movement
-def move_mouse_randomly(driver):
-    body = driver.find_element(By.TAG_NAME, "body")
-    actions = ActionChains(driver)
-    actions.move_to_element(body).move_by_offset(random.randint(-100, 100), random.randint(-100, 100)).perform()
-    random_sleep(1, 2)
-
 # Class to automate the process of joining Google Meet as a guest
 class JoinGoogleMeetAsGuest:
     def __init__(self):
