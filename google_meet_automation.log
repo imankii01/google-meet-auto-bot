@@ -2808,3 +2808,891 @@ Stacktrace:
 2024-12-07 20:50:58,388 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
 2024-12-07 20:50:59,530 - WARNING - _log -  * Debugger is active!
 2024-12-07 20:50:59,546 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:13:55,859 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:13:55,871 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:14:21,053 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:14:21,666 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:14:21,676 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:15:13,018 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:15:13,619 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:15:13,631 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:15:16,667 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:15:17,509 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:15:17,526 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:15:32,642 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:15:33,318 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:15:33,327 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:15:46,492 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:15:47,089 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:15:47,101 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:15:54,232 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:15:54,703 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:15:54,710 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:16:14,159 - INFO - setup_browser - Browser initialized successfully.
+2024-12-07 21:16:19,461 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_initial_page_20241207_211617.png
+2024-12-07 21:16:22,659 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:16:23,706 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:16:24,220 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:16:25,824 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:16:26,190 - INFO - continuous_modal_handler - Closed modal: button[data-mdc-dialog-action="cancel"]
+2024-12-07 21:16:27,615 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:16:28,035 - WARNING - join_meeting - Join attempt with button[jsname="Qx7uuf"] failed: Message: javascript error: {"status":60,"value":"[object HTMLButtonElement] has no size and location"}
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x00000001062b9e82 chromedriver + 6696578
+1   chromedriver                        0x00000001062b1c9a chromedriver + 6663322
+2   chromedriver                        0x0000000105cb9e3e chromedriver + 405054
+3   chromedriver                        0x0000000105cc00e2 chromedriver + 430306
+4   chromedriver                        0x0000000105cc28b8 chromedriver + 440504
+5   chromedriver                        0x0000000105cc2984 chromedriver + 440708
+6   chromedriver                        0x0000000105d1142c chromedriver + 762924
+7   chromedriver                        0x0000000105d107ec chromedriver + 759788
+8   chromedriver                        0x0000000105d5c1e7 chromedriver + 1069543
+9   chromedriver                        0x0000000105d2f872 chromedriver + 886898
+10  chromedriver                        0x0000000105d523f4 chromedriver + 1029108
+11  chromedriver                        0x0000000105d2f613 chromedriver + 886291
+12  chromedriver                        0x0000000105cfc950 chromedriver + 678224
+13  chromedriver                        0x0000000105cfd34e chromedriver + 680782
+14  chromedriver                        0x0000000106287770 chromedriver + 6489968
+15  chromedriver                        0x000000010628a219 chromedriver + 6500889
+16  chromedriver                        0x0000000106289d3b chromedriver + 6499643
+17  chromedriver                        0x000000010628a6a5 chromedriver + 6502053
+18  chromedriver                        0x0000000106272524 chromedriver + 6403364
+19  chromedriver                        0x000000010628a98f chromedriver + 6502799
+20  chromedriver                        0x0000000106263954 chromedriver + 6342996
+21  chromedriver                        0x00000001062a2378 chromedriver + 6599544
+22  chromedriver                        0x00000001062a2535 chromedriver + 6599989
+23  chromedriver                        0x00000001062b1868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:16:32,101 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:16:33,011 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:16:33,965 - WARNING - join_meeting - Join attempt with div[jsname="GGAcbc"] failed: Message: 
+Stacktrace:
+0   chromedriver                        0x00000001062b9e82 chromedriver + 6696578
+1   chromedriver                        0x00000001062b1c9a chromedriver + 6663322
+2   chromedriver                        0x0000000105cb9e3e chromedriver + 405054
+3   chromedriver                        0x0000000105d0a815 chromedriver + 735253
+4   chromedriver                        0x0000000105d0ad11 chromedriver + 736529
+5   chromedriver                        0x0000000105d55314 chromedriver + 1041172
+6   chromedriver                        0x0000000105d2f89d chromedriver + 886941
+7   chromedriver                        0x0000000105d523f4 chromedriver + 1029108
+8   chromedriver                        0x0000000105d2f613 chromedriver + 886291
+9   chromedriver                        0x0000000105cfc950 chromedriver + 678224
+10  chromedriver                        0x0000000105cfd34e chromedriver + 680782
+11  chromedriver                        0x0000000106287770 chromedriver + 6489968
+12  chromedriver                        0x000000010628a219 chromedriver + 6500889
+13  chromedriver                        0x0000000106289d3b chromedriver + 6499643
+14  chromedriver                        0x000000010628a6a5 chromedriver + 6502053
+15  chromedriver                        0x0000000106272524 chromedriver + 6403364
+16  chromedriver                        0x000000010628a98f chromedriver + 6502799
+17  chromedriver                        0x0000000106263954 chromedriver + 6342996
+18  chromedriver                        0x00000001062a2378 chromedriver + 6599544
+19  chromedriver                        0x00000001062a2535 chromedriver + 6599989
+20  chromedriver                        0x00000001062b1868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:16:34,005 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:16:34,336 - INFO - continuous_modal_handler - Closed modal: button[jsname="r8qRAd"]
+2024-12-07 21:16:40,249 - WARNING - join_meeting - Join attempt with .UywwFc-LgbsSe failed: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   chromedriver                        0x00000001062b9e82 chromedriver + 6696578
+1   chromedriver                        0x00000001062b1c9a chromedriver + 6663322
+2   chromedriver                        0x0000000105cb9e3e chromedriver + 405054
+3   chromedriver                        0x0000000105cc00e2 chromedriver + 430306
+4   chromedriver                        0x0000000105cc28b8 chromedriver + 440504
+5   chromedriver                        0x0000000105cc2984 chromedriver + 440708
+6   chromedriver                        0x0000000105d1142c chromedriver + 762924
+7   chromedriver                        0x0000000105d107ec chromedriver + 759788
+8   chromedriver                        0x0000000105d5c1e7 chromedriver + 1069543
+9   chromedriver                        0x0000000105d2f872 chromedriver + 886898
+10  chromedriver                        0x0000000105d523f4 chromedriver + 1029108
+11  chromedriver                        0x0000000105d2f613 chromedriver + 886291
+12  chromedriver                        0x0000000105cfc950 chromedriver + 678224
+13  chromedriver                        0x0000000105cfd34e chromedriver + 680782
+14  chromedriver                        0x0000000106287770 chromedriver + 6489968
+15  chromedriver                        0x000000010628a219 chromedriver + 6500889
+16  chromedriver                        0x0000000106289d3b chromedriver + 6499643
+17  chromedriver                        0x000000010628a6a5 chromedriver + 6502053
+18  chromedriver                        0x0000000106272524 chromedriver + 6403364
+19  chromedriver                        0x000000010628a98f chromedriver + 6502799
+20  chromedriver                        0x0000000106263954 chromedriver + 6342996
+21  chromedriver                        0x00000001062a2378 chromedriver + 6599544
+22  chromedriver                        0x00000001062a2535 chromedriver + 6599989
+23  chromedriver                        0x00000001062b1868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:16:40,249 - ERROR - join_meeting - Meeting join button click failed: Could not join meeting after multiple attempts
+2024-12-07 21:16:40,249 - ERROR - join_meeting - Meeting join failed: Could not join meeting after multiple attempts
+2024-12-07 21:16:40,251 - ERROR - join_meeting - Traceback (most recent call last):
+  File "/Users/ankit/development/Google-Meet-Bot/main.py", line 205, in join_meeting
+    raise Exception("Could not join meeting after multiple attempts")
+Exception: Could not join meeting after multiple attempts
+
+2024-12-07 21:16:50,416 - WARNING - toggle_audio_video - Failed to toggle audio/video: Message: 
+Stacktrace:
+0   chromedriver                        0x00000001062b9e82 chromedriver + 6696578
+1   chromedriver                        0x00000001062b1c9a chromedriver + 6663322
+2   chromedriver                        0x0000000105cb9e3e chromedriver + 405054
+3   chromedriver                        0x0000000105d0a815 chromedriver + 735253
+4   chromedriver                        0x0000000105d0ad11 chromedriver + 736529
+5   chromedriver                        0x0000000105d55314 chromedriver + 1041172
+6   chromedriver                        0x0000000105d2f89d chromedriver + 886941
+7   chromedriver                        0x0000000105d523f4 chromedriver + 1029108
+8   chromedriver                        0x0000000105d2f613 chromedriver + 886291
+9   chromedriver                        0x0000000105cfc950 chromedriver + 678224
+10  chromedriver                        0x0000000105cfd34e chromedriver + 680782
+11  chromedriver                        0x0000000106287770 chromedriver + 6489968
+12  chromedriver                        0x000000010628a219 chromedriver + 6500889
+13  chromedriver                        0x0000000106289d3b chromedriver + 6499643
+14  chromedriver                        0x000000010628a6a5 chromedriver + 6502053
+15  chromedriver                        0x0000000106272524 chromedriver + 6403364
+16  chromedriver                        0x000000010628a98f chromedriver + 6502799
+17  chromedriver                        0x0000000106263954 chromedriver + 6342996
+18  chromedriver                        0x00000001062a2378 chromedriver + 6599544
+19  chromedriver                        0x00000001062a2535 chromedriver + 6599989
+20  chromedriver                        0x00000001062b1868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:16:53,649 - INFO - continuous_modal_handler - Closed modal: button[jsname="r8qRAd"]
+2024-12-07 21:17:04,331 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:17:05,878 - ERROR - enable_captions - Failed to enable captions: Message: 
+Stacktrace:
+0   chromedriver                        0x00000001062b9e82 chromedriver + 6696578
+1   chromedriver                        0x00000001062b1c9a chromedriver + 6663322
+2   chromedriver                        0x0000000105cb9e3e chromedriver + 405054
+3   chromedriver                        0x0000000105d0a815 chromedriver + 735253
+4   chromedriver                        0x0000000105d0ad11 chromedriver + 736529
+5   chromedriver                        0x0000000105d55314 chromedriver + 1041172
+6   chromedriver                        0x0000000105d2f89d chromedriver + 886941
+7   chromedriver                        0x0000000105d523f4 chromedriver + 1029108
+8   chromedriver                        0x0000000105d2f613 chromedriver + 886291
+9   chromedriver                        0x0000000105cfc950 chromedriver + 678224
+10  chromedriver                        0x0000000105cfd34e chromedriver + 680782
+11  chromedriver                        0x0000000106287770 chromedriver + 6489968
+12  chromedriver                        0x000000010628a219 chromedriver + 6500889
+13  chromedriver                        0x0000000106289d3b chromedriver + 6499643
+14  chromedriver                        0x000000010628a6a5 chromedriver + 6502053
+15  chromedriver                        0x0000000106272524 chromedriver + 6403364
+16  chromedriver                        0x000000010628a98f chromedriver + 6502799
+17  chromedriver                        0x0000000106263954 chromedriver + 6342996
+18  chromedriver                        0x00000001062a2378 chromedriver + 6599544
+19  chromedriver                        0x00000001062a2535 chromedriver + 6599989
+20  chromedriver                        0x00000001062b1868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:17:06,687 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:17:06,688 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_meeting_joined_20241207_211705.png
+2024-12-07 21:17:07,481 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:17:07,484 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_final_state_20241207_211706.png
+2024-12-07 21:17:07,484 - ERROR - join_meet_endpoint - Endpoint error: name 'stop_captions_event' is not defined
+2024-12-07 21:17:07,484 - INFO - _log - 127.0.0.1 - - [07/Dec/2024 21:17:07] "[35m[1mPOST /join-meet HTTP/1.1[0m" 500 -
+2024-12-07 21:17:12,214 - INFO - continuous_modal_handler - Closed modal: button[jsname="r8qRAd"]
+2024-12-07 21:17:57,546 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:17:58,656 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:17:58,672 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:18:28,883 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:19:44,507 - INFO - _log - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.85:5000
+2024-12-07 21:19:44,508 - INFO - _log - [33mPress CTRL+C to quit[0m
+2024-12-07 21:19:44,509 - INFO - _log -  * Restarting with stat
+2024-12-07 21:19:45,612 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:19:45,637 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:19:52,382 - INFO - setup_browser - Browser initialized successfully.
+2024-12-07 21:19:57,617 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_initial_page_20241207_211957.png
+2024-12-07 21:20:04,062 - INFO - continuous_modal_handler - Closed modal: button[data-mdc-dialog-action="cancel"]
+2024-12-07 21:20:09,328 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:20:09,841 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:20:13,771 - INFO - continuous_modal_handler - Closed modal: button[jsname="Qx7uuf"]
+2024-12-07 21:20:13,952 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:20:19,730 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:20:19,737 - WARNING - join_meeting - Join attempt with div[jsname="GGAcbc"] failed: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010a7d7e82 chromedriver + 6696578
+1   chromedriver                        0x000000010a7cfc9a chromedriver + 6663322
+2   chromedriver                        0x000000010a1d7e3e chromedriver + 405054
+3   chromedriver                        0x000000010a228815 chromedriver + 735253
+4   chromedriver                        0x000000010a228d11 chromedriver + 736529
+5   chromedriver                        0x000000010a273314 chromedriver + 1041172
+6   chromedriver                        0x000000010a24d89d chromedriver + 886941
+7   chromedriver                        0x000000010a2703f4 chromedriver + 1029108
+8   chromedriver                        0x000000010a24d613 chromedriver + 886291
+9   chromedriver                        0x000000010a21a950 chromedriver + 678224
+10  chromedriver                        0x000000010a21b34e chromedriver + 680782
+11  chromedriver                        0x000000010a7a5770 chromedriver + 6489968
+12  chromedriver                        0x000000010a7a8219 chromedriver + 6500889
+13  chromedriver                        0x000000010a7a7d3b chromedriver + 6499643
+14  chromedriver                        0x000000010a7a86a5 chromedriver + 6502053
+15  chromedriver                        0x000000010a790524 chromedriver + 6403364
+16  chromedriver                        0x000000010a7a898f chromedriver + 6502799
+17  chromedriver                        0x000000010a781954 chromedriver + 6342996
+18  chromedriver                        0x000000010a7c0378 chromedriver + 6599544
+19  chromedriver                        0x000000010a7c0535 chromedriver + 6599989
+20  chromedriver                        0x000000010a7cf868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:20:20,376 - WARNING - join_meeting - Join attempt with .UywwFc-LgbsSe failed: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   chromedriver                        0x000000010a7d7e82 chromedriver + 6696578
+1   chromedriver                        0x000000010a7cfc9a chromedriver + 6663322
+2   chromedriver                        0x000000010a1d7e3e chromedriver + 405054
+3   chromedriver                        0x000000010a1de0e2 chromedriver + 430306
+4   chromedriver                        0x000000010a1e0be3 chromedriver + 441315
+5   chromedriver                        0x000000010a271455 chromedriver + 1033301
+6   chromedriver                        0x000000010a24d872 chromedriver + 886898
+7   chromedriver                        0x000000010a2703f4 chromedriver + 1029108
+8   chromedriver                        0x000000010a24d613 chromedriver + 886291
+9   chromedriver                        0x000000010a21a950 chromedriver + 678224
+10  chromedriver                        0x000000010a21b34e chromedriver + 680782
+11  chromedriver                        0x000000010a7a5770 chromedriver + 6489968
+12  chromedriver                        0x000000010a7a8219 chromedriver + 6500889
+13  chromedriver                        0x000000010a7a7d3b chromedriver + 6499643
+14  chromedriver                        0x000000010a7a86a5 chromedriver + 6502053
+15  chromedriver                        0x000000010a790524 chromedriver + 6403364
+16  chromedriver                        0x000000010a7a898f chromedriver + 6502799
+17  chromedriver                        0x000000010a781954 chromedriver + 6342996
+18  chromedriver                        0x000000010a7c0378 chromedriver + 6599544
+19  chromedriver                        0x000000010a7c0535 chromedriver + 6599989
+20  chromedriver                        0x000000010a7cf868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:20:20,377 - ERROR - join_meeting - Meeting join button click failed: Could not join meeting after multiple attempts
+2024-12-07 21:20:20,377 - ERROR - join_meeting - Meeting join failed: Could not join meeting after multiple attempts
+2024-12-07 21:20:20,390 - ERROR - join_meeting - Traceback (most recent call last):
+  File "/Users/ankit/development/Google-Meet-Bot/main.py", line 204, in join_meeting
+    raise Exception("Could not join meeting after multiple attempts")
+Exception: Could not join meeting after multiple attempts
+
+2024-12-07 21:20:20,400 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:20:27,232 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:20:30,908 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:20:30,910 - WARNING - toggle_audio_video - Failed to toggle audio/video: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010a7d7e82 chromedriver + 6696578
+1   chromedriver                        0x000000010a7cfc9a chromedriver + 6663322
+2   chromedriver                        0x000000010a1d7e3e chromedriver + 405054
+3   chromedriver                        0x000000010a228815 chromedriver + 735253
+4   chromedriver                        0x000000010a228d11 chromedriver + 736529
+5   chromedriver                        0x000000010a273314 chromedriver + 1041172
+6   chromedriver                        0x000000010a24d89d chromedriver + 886941
+7   chromedriver                        0x000000010a2703f4 chromedriver + 1029108
+8   chromedriver                        0x000000010a24d613 chromedriver + 886291
+9   chromedriver                        0x000000010a21a950 chromedriver + 678224
+10  chromedriver                        0x000000010a21b34e chromedriver + 680782
+11  chromedriver                        0x000000010a7a5770 chromedriver + 6489968
+12  chromedriver                        0x000000010a7a8219 chromedriver + 6500889
+13  chromedriver                        0x000000010a7a7d3b chromedriver + 6499643
+14  chromedriver                        0x000000010a7a86a5 chromedriver + 6502053
+15  chromedriver                        0x000000010a790524 chromedriver + 6403364
+16  chromedriver                        0x000000010a7a898f chromedriver + 6502799
+17  chromedriver                        0x000000010a781954 chromedriver + 6342996
+18  chromedriver                        0x000000010a7c0378 chromedriver + 6599544
+19  chromedriver                        0x000000010a7c0535 chromedriver + 6599989
+20  chromedriver                        0x000000010a7cf868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:20:35,949 - INFO - enable_captions - Captions enabled.
+2024-12-07 21:20:36,706 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_meeting_joined_20241207_212035.png
+2024-12-07 21:20:37,166 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_final_state_20241207_212036.png
+2024-12-07 21:20:37,167 - ERROR - join_meet_endpoint - Endpoint error: name 'stop_captions_event' is not defined
+2024-12-07 21:20:37,168 - INFO - _log - 127.0.0.1 - - [07/Dec/2024 21:20:37] "[35m[1mPOST /join-meet HTTP/1.1[0m" 500 -
+2024-12-07 21:20:37,178 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:20:37,271 - INFO - continuous_modal_handler - Closed modal: button[jsname="EszDEe"]
+2024-12-07 21:21:22,374 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:21:22,658 - INFO - _log -  * Restarting with stat
+2024-12-07 21:21:23,327 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:21:23,341 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:21:28,066 - INFO - setup_browser - Browser initialized successfully.
+2024-12-07 21:21:33,945 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_initial_page_20241207_212132.png
+2024-12-07 21:21:38,928 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:21:41,172 - INFO - continuous_modal_handler - Closed modal: button[data-mdc-dialog-action="cancel"]
+2024-12-07 21:21:41,205 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:21:42,243 - WARNING - join_meeting - Join attempt with button[jsname="Qx7uuf"] failed: Message: javascript error: {"status":60,"value":"[object HTMLButtonElement] has no size and location"}
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010d31fe82 chromedriver + 6696578
+1   chromedriver                        0x000000010d317c9a chromedriver + 6663322
+2   chromedriver                        0x000000010cd1fe3e chromedriver + 405054
+3   chromedriver                        0x000000010cd260e2 chromedriver + 430306
+4   chromedriver                        0x000000010cd288b8 chromedriver + 440504
+5   chromedriver                        0x000000010cd28984 chromedriver + 440708
+6   chromedriver                        0x000000010cd7742c chromedriver + 762924
+7   chromedriver                        0x000000010cd767ec chromedriver + 759788
+8   chromedriver                        0x000000010cdc21e7 chromedriver + 1069543
+9   chromedriver                        0x000000010cd95872 chromedriver + 886898
+10  chromedriver                        0x000000010cdb83f4 chromedriver + 1029108
+11  chromedriver                        0x000000010cd95613 chromedriver + 886291
+12  chromedriver                        0x000000010cd62950 chromedriver + 678224
+13  chromedriver                        0x000000010cd6334e chromedriver + 680782
+14  chromedriver                        0x000000010d2ed770 chromedriver + 6489968
+15  chromedriver                        0x000000010d2f0219 chromedriver + 6500889
+16  chromedriver                        0x000000010d2efd3b chromedriver + 6499643
+17  chromedriver                        0x000000010d2f06a5 chromedriver + 6502053
+18  chromedriver                        0x000000010d2d8524 chromedriver + 6403364
+19  chromedriver                        0x000000010d2f098f chromedriver + 6502799
+20  chromedriver                        0x000000010d2c9954 chromedriver + 6342996
+21  chromedriver                        0x000000010d308378 chromedriver + 6599544
+22  chromedriver                        0x000000010d308535 chromedriver + 6599989
+23  chromedriver                        0x000000010d317868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:21:44,832 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:21:45,878 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:21:47,442 - WARNING - join_meeting - Join attempt with div[jsname="GGAcbc"] failed: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010d31fe82 chromedriver + 6696578
+1   chromedriver                        0x000000010d317c9a chromedriver + 6663322
+2   chromedriver                        0x000000010cd1fe3e chromedriver + 405054
+3   chromedriver                        0x000000010cd70815 chromedriver + 735253
+4   chromedriver                        0x000000010cd70d11 chromedriver + 736529
+5   chromedriver                        0x000000010cdbb314 chromedriver + 1041172
+6   chromedriver                        0x000000010cd9589d chromedriver + 886941
+7   chromedriver                        0x000000010cdb83f4 chromedriver + 1029108
+8   chromedriver                        0x000000010cd95613 chromedriver + 886291
+9   chromedriver                        0x000000010cd62950 chromedriver + 678224
+10  chromedriver                        0x000000010cd6334e chromedriver + 680782
+11  chromedriver                        0x000000010d2ed770 chromedriver + 6489968
+12  chromedriver                        0x000000010d2f0219 chromedriver + 6500889
+13  chromedriver                        0x000000010d2efd3b chromedriver + 6499643
+14  chromedriver                        0x000000010d2f06a5 chromedriver + 6502053
+15  chromedriver                        0x000000010d2d8524 chromedriver + 6403364
+16  chromedriver                        0x000000010d2f098f chromedriver + 6502799
+17  chromedriver                        0x000000010d2c9954 chromedriver + 6342996
+18  chromedriver                        0x000000010d308378 chromedriver + 6599544
+19  chromedriver                        0x000000010d308535 chromedriver + 6599989
+20  chromedriver                        0x000000010d317868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:21:54,300 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:21:54,301 - WARNING - join_meeting - Join attempt with .UywwFc-LgbsSe failed: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   chromedriver                        0x000000010d31fe82 chromedriver + 6696578
+1   chromedriver                        0x000000010d317c9a chromedriver + 6663322
+2   chromedriver                        0x000000010cd1fe3e chromedriver + 405054
+3   chromedriver                        0x000000010cd260e2 chromedriver + 430306
+4   chromedriver                        0x000000010cd288b8 chromedriver + 440504
+5   chromedriver                        0x000000010cd28984 chromedriver + 440708
+6   chromedriver                        0x000000010cd7742c chromedriver + 762924
+7   chromedriver                        0x000000010cd767ec chromedriver + 759788
+8   chromedriver                        0x000000010cdc21e7 chromedriver + 1069543
+9   chromedriver                        0x000000010cd95872 chromedriver + 886898
+10  chromedriver                        0x000000010cdb83f4 chromedriver + 1029108
+11  chromedriver                        0x000000010cd95613 chromedriver + 886291
+12  chromedriver                        0x000000010cd62950 chromedriver + 678224
+13  chromedriver                        0x000000010cd6334e chromedriver + 680782
+14  chromedriver                        0x000000010d2ed770 chromedriver + 6489968
+15  chromedriver                        0x000000010d2f0219 chromedriver + 6500889
+16  chromedriver                        0x000000010d2efd3b chromedriver + 6499643
+17  chromedriver                        0x000000010d2f06a5 chromedriver + 6502053
+18  chromedriver                        0x000000010d2d8524 chromedriver + 6403364
+19  chromedriver                        0x000000010d2f098f chromedriver + 6502799
+20  chromedriver                        0x000000010d2c9954 chromedriver + 6342996
+21  chromedriver                        0x000000010d308378 chromedriver + 6599544
+22  chromedriver                        0x000000010d308535 chromedriver + 6599989
+23  chromedriver                        0x000000010d317868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:21:54,301 - ERROR - join_meeting - Meeting join button click failed: Could not join meeting after multiple attempts
+2024-12-07 21:21:54,301 - ERROR - join_meeting - Meeting join failed: Could not join meeting after multiple attempts
+2024-12-07 21:21:54,305 - ERROR - join_meeting - Traceback (most recent call last):
+  File "/Users/ankit/development/Google-Meet-Bot/main.py", line 204, in join_meeting
+    raise Exception("Could not join meeting after multiple attempts")
+Exception: Could not join meeting after multiple attempts
+
+2024-12-07 21:21:56,491 - INFO - continuous_modal_handler - Closed modal: button[jsname="EszDEe"]
+2024-12-07 21:22:04,538 - WARNING - toggle_audio_video - Failed to toggle audio/video: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010d31fe82 chromedriver + 6696578
+1   chromedriver                        0x000000010d317c9a chromedriver + 6663322
+2   chromedriver                        0x000000010cd1fe3e chromedriver + 405054
+3   chromedriver                        0x000000010cd70815 chromedriver + 735253
+4   chromedriver                        0x000000010cd70d11 chromedriver + 736529
+5   chromedriver                        0x000000010cdbb314 chromedriver + 1041172
+6   chromedriver                        0x000000010cd9589d chromedriver + 886941
+7   chromedriver                        0x000000010cdb83f4 chromedriver + 1029108
+8   chromedriver                        0x000000010cd95613 chromedriver + 886291
+9   chromedriver                        0x000000010cd62950 chromedriver + 678224
+10  chromedriver                        0x000000010cd6334e chromedriver + 680782
+11  chromedriver                        0x000000010d2ed770 chromedriver + 6489968
+12  chromedriver                        0x000000010d2f0219 chromedriver + 6500889
+13  chromedriver                        0x000000010d2efd3b chromedriver + 6499643
+14  chromedriver                        0x000000010d2f06a5 chromedriver + 6502053
+15  chromedriver                        0x000000010d2d8524 chromedriver + 6403364
+16  chromedriver                        0x000000010d2f098f chromedriver + 6502799
+17  chromedriver                        0x000000010d2c9954 chromedriver + 6342996
+18  chromedriver                        0x000000010d308378 chromedriver + 6599544
+19  chromedriver                        0x000000010d308535 chromedriver + 6599989
+20  chromedriver                        0x000000010d317868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:22:06,174 - INFO - continuous_modal_handler - Closed modal: button[jsname="r8qRAd"]
+2024-12-07 21:22:09,575 - INFO - enable_captions - Captions enabled.
+2024-12-07 21:22:10,276 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_meeting_joined_20241207_212209.png
+2024-12-07 21:22:10,730 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:22:10,733 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_final_state_20241207_212210.png
+2024-12-07 21:22:10,733 - ERROR - join_meet_endpoint - Endpoint error: name 'stop_captions_event' is not defined
+2024-12-07 21:22:10,734 - INFO - _log - 127.0.0.1 - - [07/Dec/2024 21:22:10] "[35m[1mPOST /join-meet HTTP/1.1[0m" 500 -
+2024-12-07 21:22:23,003 - INFO - continuous_modal_handler - Closed modal: button[jsname="r8qRAd"]
+2024-12-07 21:22:50,245 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:22:50,540 - INFO - _log -  * Restarting with stat
+2024-12-07 21:23:45,880 - INFO - _log - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.85:5000
+2024-12-07 21:23:45,880 - INFO - _log - [33mPress CTRL+C to quit[0m
+2024-12-07 21:23:45,882 - INFO - _log -  * Restarting with stat
+2024-12-07 21:23:46,206 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:23:46,214 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:23:52,557 - INFO - setup_browser - Browser initialized successfully.
+2024-12-07 21:23:58,365 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_initial_page_20241207_212356.png
+2024-12-07 21:24:01,556 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:24:02,073 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:24:04,883 - INFO - continuous_modal_handler - Closed modal: button[data-mdc-dialog-action="cancel"]
+2024-12-07 21:24:07,771 - WARNING - join_meeting - Join attempt with button[jsname="Qx7uuf"] failed: Message: javascript error: {"status":60,"value":"[object HTMLButtonElement] has no size and location"}
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x00000001026b3e82 chromedriver + 6696578
+1   chromedriver                        0x00000001026abc9a chromedriver + 6663322
+2   chromedriver                        0x00000001020b3e3e chromedriver + 405054
+3   chromedriver                        0x00000001020ba0e2 chromedriver + 430306
+4   chromedriver                        0x00000001020bc8b8 chromedriver + 440504
+5   chromedriver                        0x00000001020bc984 chromedriver + 440708
+6   chromedriver                        0x000000010210b42c chromedriver + 762924
+7   chromedriver                        0x000000010210a7ec chromedriver + 759788
+8   chromedriver                        0x00000001021561e7 chromedriver + 1069543
+9   chromedriver                        0x0000000102129872 chromedriver + 886898
+10  chromedriver                        0x000000010214c3f4 chromedriver + 1029108
+11  chromedriver                        0x0000000102129613 chromedriver + 886291
+12  chromedriver                        0x00000001020f6950 chromedriver + 678224
+13  chromedriver                        0x00000001020f734e chromedriver + 680782
+14  chromedriver                        0x0000000102681770 chromedriver + 6489968
+15  chromedriver                        0x0000000102684219 chromedriver + 6500889
+16  chromedriver                        0x0000000102683d3b chromedriver + 6499643
+17  chromedriver                        0x00000001026846a5 chromedriver + 6502053
+18  chromedriver                        0x000000010266c524 chromedriver + 6403364
+19  chromedriver                        0x000000010268498f chromedriver + 6502799
+20  chromedriver                        0x000000010265d954 chromedriver + 6342996
+21  chromedriver                        0x000000010269c378 chromedriver + 6599544
+22  chromedriver                        0x000000010269c535 chromedriver + 6599989
+23  chromedriver                        0x00000001026ab868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:24:08,070 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:24:08,597 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:24:13,239 - WARNING - join_meeting - Join attempt with div[jsname="GGAcbc"] failed: Message: 
+Stacktrace:
+0   chromedriver                        0x00000001026b3e82 chromedriver + 6696578
+1   chromedriver                        0x00000001026abc9a chromedriver + 6663322
+2   chromedriver                        0x00000001020b3e3e chromedriver + 405054
+3   chromedriver                        0x0000000102104815 chromedriver + 735253
+4   chromedriver                        0x0000000102104d11 chromedriver + 736529
+5   chromedriver                        0x000000010214f314 chromedriver + 1041172
+6   chromedriver                        0x000000010212989d chromedriver + 886941
+7   chromedriver                        0x000000010214c3f4 chromedriver + 1029108
+8   chromedriver                        0x0000000102129613 chromedriver + 886291
+9   chromedriver                        0x00000001020f6950 chromedriver + 678224
+10  chromedriver                        0x00000001020f734e chromedriver + 680782
+11  chromedriver                        0x0000000102681770 chromedriver + 6489968
+12  chromedriver                        0x0000000102684219 chromedriver + 6500889
+13  chromedriver                        0x0000000102683d3b chromedriver + 6499643
+14  chromedriver                        0x00000001026846a5 chromedriver + 6502053
+15  chromedriver                        0x000000010266c524 chromedriver + 6403364
+16  chromedriver                        0x000000010268498f chromedriver + 6502799
+17  chromedriver                        0x000000010265d954 chromedriver + 6342996
+18  chromedriver                        0x000000010269c378 chromedriver + 6599544
+19  chromedriver                        0x000000010269c535 chromedriver + 6599989
+20  chromedriver                        0x00000001026ab868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:24:18,807 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:24:18,808 - WARNING - join_meeting - Join attempt with .UywwFc-LgbsSe failed: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   chromedriver                        0x00000001026b3e82 chromedriver + 6696578
+1   chromedriver                        0x00000001026abc9a chromedriver + 6663322
+2   chromedriver                        0x00000001020b3e3e chromedriver + 405054
+3   chromedriver                        0x00000001020ba0e2 chromedriver + 430306
+4   chromedriver                        0x00000001020bc8b8 chromedriver + 440504
+5   chromedriver                        0x00000001020bc984 chromedriver + 440708
+6   chromedriver                        0x000000010210b42c chromedriver + 762924
+7   chromedriver                        0x000000010210a7ec chromedriver + 759788
+8   chromedriver                        0x00000001021561e7 chromedriver + 1069543
+9   chromedriver                        0x0000000102129872 chromedriver + 886898
+10  chromedriver                        0x000000010214c3f4 chromedriver + 1029108
+11  chromedriver                        0x0000000102129613 chromedriver + 886291
+12  chromedriver                        0x00000001020f6950 chromedriver + 678224
+13  chromedriver                        0x00000001020f734e chromedriver + 680782
+14  chromedriver                        0x0000000102681770 chromedriver + 6489968
+15  chromedriver                        0x0000000102684219 chromedriver + 6500889
+16  chromedriver                        0x0000000102683d3b chromedriver + 6499643
+17  chromedriver                        0x00000001026846a5 chromedriver + 6502053
+18  chromedriver                        0x000000010266c524 chromedriver + 6403364
+19  chromedriver                        0x000000010268498f chromedriver + 6502799
+20  chromedriver                        0x000000010265d954 chromedriver + 6342996
+21  chromedriver                        0x000000010269c378 chromedriver + 6599544
+22  chromedriver                        0x000000010269c535 chromedriver + 6599989
+23  chromedriver                        0x00000001026ab868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:24:18,808 - ERROR - join_meeting - Meeting join button click failed: Could not join meeting after multiple attempts
+2024-12-07 21:24:18,808 - ERROR - join_meeting - Meeting join failed: Could not join meeting after multiple attempts
+2024-12-07 21:24:18,811 - ERROR - join_meeting - Traceback (most recent call last):
+  File "/Users/ankit/development/Google-Meet-Bot/main.py", line 204, in join_meeting
+    raise Exception("Could not join meeting after multiple attempts")
+Exception: Could not join meeting after multiple attempts
+
+2024-12-07 21:24:19,524 - INFO - continuous_modal_handler - Closed modal: button[jsname="EszDEe"]
+2024-12-07 21:24:28,939 - WARNING - toggle_audio_video - Failed to toggle audio/video: Message: 
+Stacktrace:
+0   chromedriver                        0x00000001026b3e82 chromedriver + 6696578
+1   chromedriver                        0x00000001026abc9a chromedriver + 6663322
+2   chromedriver                        0x00000001020b3e3e chromedriver + 405054
+3   chromedriver                        0x0000000102104815 chromedriver + 735253
+4   chromedriver                        0x0000000102104d11 chromedriver + 736529
+5   chromedriver                        0x000000010214f314 chromedriver + 1041172
+6   chromedriver                        0x000000010212989d chromedriver + 886941
+7   chromedriver                        0x000000010214c3f4 chromedriver + 1029108
+8   chromedriver                        0x0000000102129613 chromedriver + 886291
+9   chromedriver                        0x00000001020f6950 chromedriver + 678224
+10  chromedriver                        0x00000001020f734e chromedriver + 680782
+11  chromedriver                        0x0000000102681770 chromedriver + 6489968
+12  chromedriver                        0x0000000102684219 chromedriver + 6500889
+13  chromedriver                        0x0000000102683d3b chromedriver + 6499643
+14  chromedriver                        0x00000001026846a5 chromedriver + 6502053
+15  chromedriver                        0x000000010266c524 chromedriver + 6403364
+16  chromedriver                        0x000000010268498f chromedriver + 6502799
+17  chromedriver                        0x000000010265d954 chromedriver + 6342996
+18  chromedriver                        0x000000010269c378 chromedriver + 6599544
+19  chromedriver                        0x000000010269c535 chromedriver + 6599989
+20  chromedriver                        0x00000001026ab868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:24:34,074 - INFO - enable_captions - Captions enabled.
+2024-12-07 21:24:35,234 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:24:35,240 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_meeting_joined_20241207_212434.png
+2024-12-07 21:24:35,676 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_final_state_20241207_212435.png
+2024-12-07 21:24:35,677 - ERROR - join_meet_endpoint - Endpoint error: name 'stop_captions_event' is not defined
+2024-12-07 21:24:35,677 - INFO - _log - 127.0.0.1 - - [07/Dec/2024 21:24:35] "[35m[1mPOST /join-meet HTTP/1.1[0m" 500 -
+2024-12-07 21:26:59,617 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:26:59,928 - INFO - _log -  * Restarting with stat
+2024-12-07 21:27:00,538 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:27:00,548 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:27:12,637 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:27:12,737 - INFO - _log -  * Restarting with stat
+2024-12-07 21:28:04,636 - INFO - _log - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.85:5000
+2024-12-07 21:28:04,636 - INFO - _log - [33mPress CTRL+C to quit[0m
+2024-12-07 21:28:04,638 - INFO - _log -  * Restarting with stat
+2024-12-07 21:28:05,231 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:28:05,244 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:28:09,690 - INFO - setup_browser - Browser initialized successfully.
+2024-12-07 21:28:15,609 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_initial_page_20241207_212812.png
+2024-12-07 21:28:18,853 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:19,888 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:20,411 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:22,320 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:22,751 - INFO - continuous_modal_handler - Closed modal: button[data-mdc-dialog-action="cancel"]
+2024-12-07 21:28:22,775 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:23,353 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:23,870 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:23,880 - WARNING - join_meeting - Join attempt with button[jsname="Qx7uuf"] failed: Message: javascript error: {"status":60,"value":"[object HTMLButtonElement] has no size and location"}
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x0000000103446e82 chromedriver + 6696578
+1   chromedriver                        0x000000010343ec9a chromedriver + 6663322
+2   chromedriver                        0x0000000102e46e3e chromedriver + 405054
+3   chromedriver                        0x0000000102e4d0e2 chromedriver + 430306
+4   chromedriver                        0x0000000102e4f8b8 chromedriver + 440504
+5   chromedriver                        0x0000000102e4f984 chromedriver + 440708
+6   chromedriver                        0x0000000102e9e42c chromedriver + 762924
+7   chromedriver                        0x0000000102e9d7ec chromedriver + 759788
+8   chromedriver                        0x0000000102ee91e7 chromedriver + 1069543
+9   chromedriver                        0x0000000102ebc872 chromedriver + 886898
+10  chromedriver                        0x0000000102edf3f4 chromedriver + 1029108
+11  chromedriver                        0x0000000102ebc613 chromedriver + 886291
+12  chromedriver                        0x0000000102e89950 chromedriver + 678224
+13  chromedriver                        0x0000000102e8a34e chromedriver + 680782
+14  chromedriver                        0x0000000103414770 chromedriver + 6489968
+15  chromedriver                        0x0000000103417219 chromedriver + 6500889
+16  chromedriver                        0x0000000103416d3b chromedriver + 6499643
+17  chromedriver                        0x00000001034176a5 chromedriver + 6502053
+18  chromedriver                        0x00000001033ff524 chromedriver + 6403364
+19  chromedriver                        0x000000010341798f chromedriver + 6502799
+20  chromedriver                        0x00000001033f0954 chromedriver + 6342996
+21  chromedriver                        0x000000010342f378 chromedriver + 6599544
+22  chromedriver                        0x000000010342f535 chromedriver + 6599989
+23  chromedriver                        0x000000010343e868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:28:25,468 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:27,644 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:29,169 - WARNING - join_meeting - Join attempt with div[jsname="GGAcbc"] failed: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000103446e82 chromedriver + 6696578
+1   chromedriver                        0x000000010343ec9a chromedriver + 6663322
+2   chromedriver                        0x0000000102e46e3e chromedriver + 405054
+3   chromedriver                        0x0000000102e97815 chromedriver + 735253
+4   chromedriver                        0x0000000102e97d11 chromedriver + 736529
+5   chromedriver                        0x0000000102ee2314 chromedriver + 1041172
+6   chromedriver                        0x0000000102ebc89d chromedriver + 886941
+7   chromedriver                        0x0000000102edf3f4 chromedriver + 1029108
+8   chromedriver                        0x0000000102ebc613 chromedriver + 886291
+9   chromedriver                        0x0000000102e89950 chromedriver + 678224
+10  chromedriver                        0x0000000102e8a34e chromedriver + 680782
+11  chromedriver                        0x0000000103414770 chromedriver + 6489968
+12  chromedriver                        0x0000000103417219 chromedriver + 6500889
+13  chromedriver                        0x0000000103416d3b chromedriver + 6499643
+14  chromedriver                        0x00000001034176a5 chromedriver + 6502053
+15  chromedriver                        0x00000001033ff524 chromedriver + 6403364
+16  chromedriver                        0x000000010341798f chromedriver + 6502799
+17  chromedriver                        0x00000001033f0954 chromedriver + 6342996
+18  chromedriver                        0x000000010342f378 chromedriver + 6599544
+19  chromedriver                        0x000000010342f535 chromedriver + 6599989
+20  chromedriver                        0x000000010343e868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:28:33,315 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:39,077 - WARNING - join_meeting - Join attempt with .UywwFc-LgbsSe failed: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   chromedriver                        0x0000000103446e82 chromedriver + 6696578
+1   chromedriver                        0x000000010343ec9a chromedriver + 6663322
+2   chromedriver                        0x0000000102e46e3e chromedriver + 405054
+3   chromedriver                        0x0000000102e4d0e2 chromedriver + 430306
+4   chromedriver                        0x0000000102e4f8b8 chromedriver + 440504
+5   chromedriver                        0x0000000102e4f984 chromedriver + 440708
+6   chromedriver                        0x0000000102e9e42c chromedriver + 762924
+7   chromedriver                        0x0000000102e9d7ec chromedriver + 759788
+8   chromedriver                        0x0000000102ee91e7 chromedriver + 1069543
+9   chromedriver                        0x0000000102ebc872 chromedriver + 886898
+10  chromedriver                        0x0000000102edf3f4 chromedriver + 1029108
+11  chromedriver                        0x0000000102ebc613 chromedriver + 886291
+12  chromedriver                        0x0000000102e89950 chromedriver + 678224
+13  chromedriver                        0x0000000102e8a34e chromedriver + 680782
+14  chromedriver                        0x0000000103414770 chromedriver + 6489968
+15  chromedriver                        0x0000000103417219 chromedriver + 6500889
+16  chromedriver                        0x0000000103416d3b chromedriver + 6499643
+17  chromedriver                        0x00000001034176a5 chromedriver + 6502053
+18  chromedriver                        0x00000001033ff524 chromedriver + 6403364
+19  chromedriver                        0x000000010341798f chromedriver + 6502799
+20  chromedriver                        0x00000001033f0954 chromedriver + 6342996
+21  chromedriver                        0x000000010342f378 chromedriver + 6599544
+22  chromedriver                        0x000000010342f535 chromedriver + 6599989
+23  chromedriver                        0x000000010343e868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:28:39,078 - ERROR - join_meeting - Meeting join button click failed: Could not join meeting after multiple attempts
+2024-12-07 21:28:39,078 - ERROR - join_meeting - Meeting join failed: Could not join meeting after multiple attempts
+2024-12-07 21:28:39,090 - ERROR - join_meeting - Traceback (most recent call last):
+  File "/Users/ankit/development/Google-Meet-Bot/main.py", line 204, in join_meeting
+    raise Exception("Could not join meeting after multiple attempts")
+Exception: Could not join meeting after multiple attempts
+
+2024-12-07 21:28:49,242 - WARNING - toggle_audio_video - Failed to toggle audio/video: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000103446e82 chromedriver + 6696578
+1   chromedriver                        0x000000010343ec9a chromedriver + 6663322
+2   chromedriver                        0x0000000102e46e3e chromedriver + 405054
+3   chromedriver                        0x0000000102e97815 chromedriver + 735253
+4   chromedriver                        0x0000000102e97d11 chromedriver + 736529
+5   chromedriver                        0x0000000102ee2314 chromedriver + 1041172
+6   chromedriver                        0x0000000102ebc89d chromedriver + 886941
+7   chromedriver                        0x0000000102edf3f4 chromedriver + 1029108
+8   chromedriver                        0x0000000102ebc613 chromedriver + 886291
+9   chromedriver                        0x0000000102e89950 chromedriver + 678224
+10  chromedriver                        0x0000000102e8a34e chromedriver + 680782
+11  chromedriver                        0x0000000103414770 chromedriver + 6489968
+12  chromedriver                        0x0000000103417219 chromedriver + 6500889
+13  chromedriver                        0x0000000103416d3b chromedriver + 6499643
+14  chromedriver                        0x00000001034176a5 chromedriver + 6502053
+15  chromedriver                        0x00000001033ff524 chromedriver + 6403364
+16  chromedriver                        0x000000010341798f chromedriver + 6502799
+17  chromedriver                        0x00000001033f0954 chromedriver + 6342996
+18  chromedriver                        0x000000010342f378 chromedriver + 6599544
+19  chromedriver                        0x000000010342f535 chromedriver + 6599989
+20  chromedriver                        0x000000010343e868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:28:54,377 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:54,378 - INFO - enable_captions - Captions enabled.
+2024-12-07 21:28:55,177 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_meeting_joined_20241207_212854.png
+2024-12-07 21:28:55,612 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:28:55,615 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_final_state_20241207_212855.png
+2024-12-07 21:28:55,615 - ERROR - join_meet_endpoint - Endpoint error: name 'stop_captions_event' is not defined
+2024-12-07 21:28:55,616 - INFO - _log - 127.0.0.1 - - [07/Dec/2024 21:28:55] "[35m[1mPOST /join-meet HTTP/1.1[0m" 500 -
+2024-12-07 21:29:58,245 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:29:58,819 - INFO - _log -  * Restarting with stat
+2024-12-07 21:30:26,787 - INFO - _log - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.85:5000
+2024-12-07 21:30:26,787 - INFO - _log - [33mPress CTRL+C to quit[0m
+2024-12-07 21:30:26,789 - INFO - _log -  * Restarting with stat
+2024-12-07 21:30:27,137 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:30:27,162 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:30:47,328 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/main.py', reloading
+2024-12-07 21:30:47,415 - INFO - _log -  * Restarting with stat
+2024-12-07 21:30:47,883 - WARNING - _log -  * Debugger is active!
+2024-12-07 21:30:47,896 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-07 21:31:19,752 - INFO - setup_browser - Browser initialized successfully.
+2024-12-07 21:31:23,012 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_initial_page_20241207_213120.png
+2024-12-07 21:31:26,284 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:31:29,685 - INFO - continuous_modal_handler - Closed modal: button[data-mdc-dialog-action="cancel"]
+2024-12-07 21:31:31,118 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:31:31,628 - WARNING - join_meeting - Join attempt with button[jsname="Qx7uuf"] failed: Message: javascript error: {"status":60,"value":"[object HTMLButtonElement] has no size and location"}
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x0000000103515e82 chromedriver + 6696578
+1   chromedriver                        0x000000010350dc9a chromedriver + 6663322
+2   chromedriver                        0x0000000102f15e3e chromedriver + 405054
+3   chromedriver                        0x0000000102f1c0e2 chromedriver + 430306
+4   chromedriver                        0x0000000102f1e8b8 chromedriver + 440504
+5   chromedriver                        0x0000000102f1e984 chromedriver + 440708
+6   chromedriver                        0x0000000102f6d42c chromedriver + 762924
+7   chromedriver                        0x0000000102f6c7ec chromedriver + 759788
+8   chromedriver                        0x0000000102fb81e7 chromedriver + 1069543
+9   chromedriver                        0x0000000102f8b872 chromedriver + 886898
+10  chromedriver                        0x0000000102fae3f4 chromedriver + 1029108
+11  chromedriver                        0x0000000102f8b613 chromedriver + 886291
+12  chromedriver                        0x0000000102f58950 chromedriver + 678224
+13  chromedriver                        0x0000000102f5934e chromedriver + 680782
+14  chromedriver                        0x00000001034e3770 chromedriver + 6489968
+15  chromedriver                        0x00000001034e6219 chromedriver + 6500889
+16  chromedriver                        0x00000001034e5d3b chromedriver + 6499643
+17  chromedriver                        0x00000001034e66a5 chromedriver + 6502053
+18  chromedriver                        0x00000001034ce524 chromedriver + 6403364
+19  chromedriver                        0x00000001034e698f chromedriver + 6502799
+20  chromedriver                        0x00000001034bf954 chromedriver + 6342996
+21  chromedriver                        0x00000001034fe378 chromedriver + 6599544
+22  chromedriver                        0x00000001034fe535 chromedriver + 6599989
+23  chromedriver                        0x000000010350d868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:31:31,652 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:31:32,711 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:31:34,261 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:31:36,918 - WARNING - join_meeting - Join attempt with div[jsname="GGAcbc"] failed: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000103515e82 chromedriver + 6696578
+1   chromedriver                        0x000000010350dc9a chromedriver + 6663322
+2   chromedriver                        0x0000000102f15e3e chromedriver + 405054
+3   chromedriver                        0x0000000102f66815 chromedriver + 735253
+4   chromedriver                        0x0000000102f66d11 chromedriver + 736529
+5   chromedriver                        0x0000000102fb1314 chromedriver + 1041172
+6   chromedriver                        0x0000000102f8b89d chromedriver + 886941
+7   chromedriver                        0x0000000102fae3f4 chromedriver + 1029108
+8   chromedriver                        0x0000000102f8b613 chromedriver + 886291
+9   chromedriver                        0x0000000102f58950 chromedriver + 678224
+10  chromedriver                        0x0000000102f5934e chromedriver + 680782
+11  chromedriver                        0x00000001034e3770 chromedriver + 6489968
+12  chromedriver                        0x00000001034e6219 chromedriver + 6500889
+13  chromedriver                        0x00000001034e5d3b chromedriver + 6499643
+14  chromedriver                        0x00000001034e66a5 chromedriver + 6502053
+15  chromedriver                        0x00000001034ce524 chromedriver + 6403364
+16  chromedriver                        0x00000001034e698f chromedriver + 6502799
+17  chromedriver                        0x00000001034bf954 chromedriver + 6342996
+18  chromedriver                        0x00000001034fe378 chromedriver + 6599544
+19  chromedriver                        0x00000001034fe535 chromedriver + 6599989
+20  chromedriver                        0x000000010350d868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:31:37,003 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:31:38,106 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:31:38,997 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-07 21:31:42,067 - WARNING - join_meeting - Join attempt with .UywwFc-LgbsSe failed: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   chromedriver                        0x0000000103515e82 chromedriver + 6696578
+1   chromedriver                        0x000000010350dc9a chromedriver + 6663322
+2   chromedriver                        0x0000000102f15e3e chromedriver + 405054
+3   chromedriver                        0x0000000102f1c0e2 chromedriver + 430306
+4   chromedriver                        0x0000000102f1e8b8 chromedriver + 440504
+5   chromedriver                        0x0000000102f1e984 chromedriver + 440708
+6   chromedriver                        0x0000000102f6d42c chromedriver + 762924
+7   chromedriver                        0x0000000102f6c7ec chromedriver + 759788
+8   chromedriver                        0x0000000102fb81e7 chromedriver + 1069543
+9   chromedriver                        0x0000000102f8b872 chromedriver + 886898
+10  chromedriver                        0x0000000102fae3f4 chromedriver + 1029108
+11  chromedriver                        0x0000000102f8b613 chromedriver + 886291
+12  chromedriver                        0x0000000102f58950 chromedriver + 678224
+13  chromedriver                        0x0000000102f5934e chromedriver + 680782
+14  chromedriver                        0x00000001034e3770 chromedriver + 6489968
+15  chromedriver                        0x00000001034e6219 chromedriver + 6500889
+16  chromedriver                        0x00000001034e5d3b chromedriver + 6499643
+17  chromedriver                        0x00000001034e66a5 chromedriver + 6502053
+18  chromedriver                        0x00000001034ce524 chromedriver + 6403364
+19  chromedriver                        0x00000001034e698f chromedriver + 6502799
+20  chromedriver                        0x00000001034bf954 chromedriver + 6342996
+21  chromedriver                        0x00000001034fe378 chromedriver + 6599544
+22  chromedriver                        0x00000001034fe535 chromedriver + 6599989
+23  chromedriver                        0x000000010350d868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:31:42,067 - ERROR - join_meeting - Meeting join button click failed: Could not join meeting after multiple attempts
+2024-12-07 21:31:42,067 - ERROR - join_meeting - Meeting join failed: Could not join meeting after multiple attempts
+2024-12-07 21:31:42,071 - ERROR - join_meeting - Traceback (most recent call last):
+  File "/Users/ankit/development/Google-Meet-Bot/main.py", line 205, in join_meeting
+    raise Exception("Could not join meeting after multiple attempts")
+Exception: Could not join meeting after multiple attempts
+
+2024-12-07 21:31:42,251 - INFO - continuous_modal_handler - Closed modal: button[jsname="EszDEe"]
+2024-12-07 21:31:52,244 - WARNING - toggle_audio_video - Failed to toggle audio/video: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000103515e82 chromedriver + 6696578
+1   chromedriver                        0x000000010350dc9a chromedriver + 6663322
+2   chromedriver                        0x0000000102f15e3e chromedriver + 405054
+3   chromedriver                        0x0000000102f66815 chromedriver + 735253
+4   chromedriver                        0x0000000102f66d11 chromedriver + 736529
+5   chromedriver                        0x0000000102fb1314 chromedriver + 1041172
+6   chromedriver                        0x0000000102f8b89d chromedriver + 886941
+7   chromedriver                        0x0000000102fae3f4 chromedriver + 1029108
+8   chromedriver                        0x0000000102f8b613 chromedriver + 886291
+9   chromedriver                        0x0000000102f58950 chromedriver + 678224
+10  chromedriver                        0x0000000102f5934e chromedriver + 680782
+11  chromedriver                        0x00000001034e3770 chromedriver + 6489968
+12  chromedriver                        0x00000001034e6219 chromedriver + 6500889
+13  chromedriver                        0x00000001034e5d3b chromedriver + 6499643
+14  chromedriver                        0x00000001034e66a5 chromedriver + 6502053
+15  chromedriver                        0x00000001034ce524 chromedriver + 6403364
+16  chromedriver                        0x00000001034e698f chromedriver + 6502799
+17  chromedriver                        0x00000001034bf954 chromedriver + 6342996
+18  chromedriver                        0x00000001034fe378 chromedriver + 6599544
+19  chromedriver                        0x00000001034fe535 chromedriver + 6599989
+20  chromedriver                        0x000000010350d868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b9271d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b922bd3 thread_start + 15
+
+2024-12-07 21:31:57,368 - INFO - enable_captions - Captions enabled.
+2024-12-07 21:31:58,204 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu_meeting_joined_20241207_213157.png
+2024-12-07 21:31:58,205 - ERROR - capture_captions - Error capturing captions: 'GoogleMeetAutomation' object has no attribute 'captions_file'
+2024-12-07 21:31:58,213 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1

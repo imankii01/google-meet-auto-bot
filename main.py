@@ -103,7 +103,6 @@ class GoogleMeetAutomation:
             'button[jsname="Jf6fmb"]',      # Got it on the next modal
             'button[jsname="Qx7uuf"]',      # Join now
             # 'button[jsname="r8qRAd"]',      # caption now
-            'button[jsname="hFkX3e"]',      
         ]
 
         while not stop_event.is_set():
@@ -133,7 +132,8 @@ class GoogleMeetAutomation:
         """
         stop_modal_event = threading.Event()
         modal_thread = None
-        
+        captions_thread = None
+        stop_captions_event = threading.Event()
         try:
             # Navigate to meet link
             self.driver.get(meet_link)
@@ -219,7 +219,13 @@ class GoogleMeetAutomation:
             
             # Take screenshot after joining
             self.take_screenshot("meeting_joined", meet_link)
-            
+            # Start capturing captions
+            captions_thread = threading.Thread(
+                target=self.capture_captions, args=(stop_captions_event,)
+            )
+            captions_thread.start()
+
+            # Stay in meeting for the specified duration
             # Run meeting for specified duration
             time.sleep(meeting_duration * 60)
             
@@ -239,7 +245,10 @@ class GoogleMeetAutomation:
             
             # Take screenshot after joining
             self.take_screenshot("meeting_joined", meet_link)
-            
+            captions_thread = threading.Thread(
+                target=self.capture_captions, args=(stop_captions_event,)
+            )
+            captions_thread.start()
             # Run meeting for specified duration
             time.sleep(meeting_duration * 60)
             
@@ -251,7 +260,10 @@ class GoogleMeetAutomation:
             
             # Take final screenshot
             self.take_screenshot("final_state", meet_link)
-            
+            stop_captions_event.set()
+            if captions_thread:
+                captions_thread.join()
+
             # Leave meeting if still connected
             # self.leave_meeting()
 
@@ -291,25 +303,33 @@ class GoogleMeetAutomation:
     def enable_captions(self):
         """Enable captions in the meeting"""
         try:
-            # Wait for and click the captions button
-            captions_button = WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, 'div[jsname="hFkX3e"]'))
+            captions_button = WebDriverWait(self.driver, 2).until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[jsname="r8qRAd"]'))
             )
             captions_button.click()
-            logger.info("Captions button clicked.")
-    
-            # Optional: Confirm if a second click is required
-            try:
-                caption_confirm = WebDriverWait(self.driver, 5).until(
-                    EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[jsname="r8qRAd"]'))
-                )
-                caption_confirm.click()
-                logger.info("Confirmation for captions completed.")
-            except Exception as e:
-                logger.warning("Confirmation button not required or not clickable. Skipping...")
-    
+            logger.info("Captions enabled.")
         except Exception as e:
-            logger.error(f"Failed to enable captions: {str(e)}")
+            logger.error(f"Failed to enable captions: {e}")
+
+    def capture_captions(self, stop_event):
+        """Capture captions in real-time and save to a file"""
+        print("Capture captions in real-time and save to a file")
+        try:
+            with open(self.captions_file, "w") as f:
+                logger.info("Started capturing captions.")
+                while not stop_event.is_set():
+                    try:
+                        captions = self.driver.find_elements(
+                            By.CSS_SELECTOR, 'span[jsname="W297wb"]'
+                        )
+                        for caption in captions:
+                            f.write(caption.text + "\n")
+                            f.flush()
+                    except Exception:
+                        continue
+                    time.sleep(1)
+        except Exception as e:
+            logger.error(f"Error capturing captions: {e}")
 
 
     def leave_meeting(self):
