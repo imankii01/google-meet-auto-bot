@@ -102,6 +102,8 @@ class GoogleMeetAutomation:
             'button[jsname="V67aGc"]',      # Continue without signing in
             'button[jsname="Jf6fmb"]',      # Got it on the next modal
             'button[jsname="Qx7uuf"]',      # Join now
+            # 'button[jsname="r8qRAd"]',      # caption now
+            'button[jsname="hFkX3e"]',      
         ]
 
         while not stop_event.is_set():
