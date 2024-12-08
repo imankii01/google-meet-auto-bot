@@ -232,3 +232,157 @@ Stacktrace:
 2024-12-08 19:24:49,381 - WARNING - capture_captions - No captions found.
 2024-12-08 19:24:50,384 - ERROR - join_meet_endpoint - Endpoint error: 'str' object cannot be interpreted as an integer
 2024-12-08 19:24:50,386 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:24:50] "[35m[1mPOST /join-meet HTTP/1.1[0m" 500 -
+2024-12-08 19:28:15,402 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:28:15] "GET / HTTP/1.1" 200 -
+2024-12-08 19:28:15,433 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:28:15] "[33mGET /api/get-logs HTTP/1.1[0m" 404 -
+2024-12-08 19:28:45,803 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:28:45] "[33mGET /api/get-logs HTTP/1.1[0m" 404 -
+2024-12-08 19:29:16,489 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:29:16] "[33mGET /api/get-logs HTTP/1.1[0m" 404 -
+2024-12-08 19:29:45,435 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:29:45] "[33mGET /api/get-logs HTTP/1.1[0m" 404 -
+2024-12-08 19:30:15,433 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:30:15] "[33mGET /api/get-logs HTTP/1.1[0m" 404 -
+2024-12-08 19:30:19,944 - INFO - setup_browser - Browser initialized successfully.
+2024-12-08 19:30:25,190 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu?_initial_page_20241208_193023.png
+2024-12-08 19:30:28,387 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:30:28,909 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:30:29,474 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:30:30,029 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:30:31,661 - INFO - continuous_modal_handler - Closed modal: button[data-mdc-dialog-action="cancel"]
+2024-12-08 19:30:33,636 - WARNING - join_meeting - Join attempt with button[jsname="Qx7uuf"] failed: Message: javascript error: {"status":60,"value":"[object HTMLButtonElement] has no size and location"}
+  (Session info: chrome=131.0.6778.109)
+Stacktrace:
+0   chromedriver                        0x000000010ce79e82 chromedriver + 6696578
+1   chromedriver                        0x000000010ce71c9a chromedriver + 6663322
+2   chromedriver                        0x000000010c879e3e chromedriver + 405054
+3   chromedriver                        0x000000010c8800e2 chromedriver + 430306
+4   chromedriver                        0x000000010c8828b8 chromedriver + 440504
+5   chromedriver                        0x000000010c882984 chromedriver + 440708
+6   chromedriver                        0x000000010c8d142c chromedriver + 762924
+7   chromedriver                        0x000000010c8d07ec chromedriver + 759788
+8   chromedriver                        0x000000010c91c1e7 chromedriver + 1069543
+9   chromedriver                        0x000000010c8ef872 chromedriver + 886898
+10  chromedriver                        0x000000010c9123f4 chromedriver + 1029108
+11  chromedriver                        0x000000010c8ef613 chromedriver + 886291
+12  chromedriver                        0x000000010c8bc950 chromedriver + 678224
+13  chromedriver                        0x000000010c8bd34e chromedriver + 680782
+14  chromedriver                        0x000000010ce47770 chromedriver + 6489968
+15  chromedriver                        0x000000010ce4a219 chromedriver + 6500889
+16  chromedriver                        0x000000010ce49d3b chromedriver + 6499643
+17  chromedriver                        0x000000010ce4a6a5 chromedriver + 6502053
+18  chromedriver                        0x000000010ce32524 chromedriver + 6403364
+19  chromedriver                        0x000000010ce4a98f chromedriver + 6502799
+20  chromedriver                        0x000000010ce23954 chromedriver + 6342996
+21  chromedriver                        0x000000010ce62378 chromedriver + 6599544
+22  chromedriver                        0x000000010ce62535 chromedriver + 6599989
+23  chromedriver                        0x000000010ce71868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b4fe1d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b4f9bd3 thread_start + 15
+
+2024-12-08 19:30:38,859 - WARNING - join_meeting - Join attempt with div[jsname="GGAcbc"] failed: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010ce79e82 chromedriver + 6696578
+1   chromedriver                        0x000000010ce71c9a chromedriver + 6663322
+2   chromedriver                        0x000000010c879e3e chromedriver + 405054
+3   chromedriver                        0x000000010c8ca815 chromedriver + 735253
+4   chromedriver                        0x000000010c8cad11 chromedriver + 736529
+5   chromedriver                        0x000000010c915314 chromedriver + 1041172
+6   chromedriver                        0x000000010c8ef89d chromedriver + 886941
+7   chromedriver                        0x000000010c9123f4 chromedriver + 1029108
+8   chromedriver                        0x000000010c8ef613 chromedriver + 886291
+9   chromedriver                        0x000000010c8bc950 chromedriver + 678224
+10  chromedriver                        0x000000010c8bd34e chromedriver + 680782
+11  chromedriver                        0x000000010ce47770 chromedriver + 6489968
+12  chromedriver                        0x000000010ce4a219 chromedriver + 6500889
+13  chromedriver                        0x000000010ce49d3b chromedriver + 6499643
+14  chromedriver                        0x000000010ce4a6a5 chromedriver + 6502053
+15  chromedriver                        0x000000010ce32524 chromedriver + 6403364
+16  chromedriver                        0x000000010ce4a98f chromedriver + 6502799
+17  chromedriver                        0x000000010ce23954 chromedriver + 6342996
+18  chromedriver                        0x000000010ce62378 chromedriver + 6599544
+19  chromedriver                        0x000000010ce62535 chromedriver + 6599989
+20  chromedriver                        0x000000010ce71868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b4fe1d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b4f9bd3 thread_start + 15
+
+2024-12-08 19:30:41,494 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:30:42,008 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:30:42,520 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:30:43,089 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:30:43,681 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:30:44,190 - WARNING - join_meeting - Join attempt with .UywwFc-LgbsSe failed: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   chromedriver                        0x000000010ce79e82 chromedriver + 6696578
+1   chromedriver                        0x000000010ce71c9a chromedriver + 6663322
+2   chromedriver                        0x000000010c879e3e chromedriver + 405054
+3   chromedriver                        0x000000010c8800e2 chromedriver + 430306
+4   chromedriver                        0x000000010c8828b8 chromedriver + 440504
+5   chromedriver                        0x000000010c882984 chromedriver + 440708
+6   chromedriver                        0x000000010c8d142c chromedriver + 762924
+7   chromedriver                        0x000000010c8d07ec chromedriver + 759788
+8   chromedriver                        0x000000010c91c1e7 chromedriver + 1069543
+9   chromedriver                        0x000000010c8ef872 chromedriver + 886898
+10  chromedriver                        0x000000010c9123f4 chromedriver + 1029108
+11  chromedriver                        0x000000010c8ef613 chromedriver + 886291
+12  chromedriver                        0x000000010c8bc950 chromedriver + 678224
+13  chromedriver                        0x000000010c8bd34e chromedriver + 680782
+14  chromedriver                        0x000000010ce47770 chromedriver + 6489968
+15  chromedriver                        0x000000010ce4a219 chromedriver + 6500889
+16  chromedriver                        0x000000010ce49d3b chromedriver + 6499643
+17  chromedriver                        0x000000010ce4a6a5 chromedriver + 6502053
+18  chromedriver                        0x000000010ce32524 chromedriver + 6403364
+19  chromedriver                        0x000000010ce4a98f chromedriver + 6502799
+20  chromedriver                        0x000000010ce23954 chromedriver + 6342996
+21  chromedriver                        0x000000010ce62378 chromedriver + 6599544
+22  chromedriver                        0x000000010ce62535 chromedriver + 6599989
+23  chromedriver                        0x000000010ce71868 chromedriver + 6662248
+24  libsystem_pthread.dylib             0x00007ff80b4fe1d3 _pthread_start + 125
+25  libsystem_pthread.dylib             0x00007ff80b4f9bd3 thread_start + 15
+
+2024-12-08 19:30:44,190 - ERROR - join_meeting - Meeting join button click failed: Could not join meeting after multiple attempts
+2024-12-08 19:30:44,191 - ERROR - join_meeting - Meeting join failed: Could not join meeting after multiple attempts
+2024-12-08 19:30:44,191 - ERROR - join_meeting - Traceback (most recent call last):
+  File "/Users/ankit/development/Google-Meet-Bot/app/automation.py", line 205, in join_meeting
+    raise Exception("Could not join meeting after multiple attempts")
+Exception: Could not join meeting after multiple attempts
+
+2024-12-08 19:30:46,564 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:30:46] "[33mGET /api/get-logs HTTP/1.1[0m" 404 -
+2024-12-08 19:30:54,334 - WARNING - toggle_audio_video - Failed to toggle audio/video: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010ce79e82 chromedriver + 6696578
+1   chromedriver                        0x000000010ce71c9a chromedriver + 6663322
+2   chromedriver                        0x000000010c879e3e chromedriver + 405054
+3   chromedriver                        0x000000010c8ca815 chromedriver + 735253
+4   chromedriver                        0x000000010c8cad11 chromedriver + 736529
+5   chromedriver                        0x000000010c915314 chromedriver + 1041172
+6   chromedriver                        0x000000010c8ef89d chromedriver + 886941
+7   chromedriver                        0x000000010c9123f4 chromedriver + 1029108
+8   chromedriver                        0x000000010c8ef613 chromedriver + 886291
+9   chromedriver                        0x000000010c8bc950 chromedriver + 678224
+10  chromedriver                        0x000000010c8bd34e chromedriver + 680782
+11  chromedriver                        0x000000010ce47770 chromedriver + 6489968
+12  chromedriver                        0x000000010ce4a219 chromedriver + 6500889
+13  chromedriver                        0x000000010ce49d3b chromedriver + 6499643
+14  chromedriver                        0x000000010ce4a6a5 chromedriver + 6502053
+15  chromedriver                        0x000000010ce32524 chromedriver + 6403364
+16  chromedriver                        0x000000010ce4a98f chromedriver + 6502799
+17  chromedriver                        0x000000010ce23954 chromedriver + 6342996
+18  chromedriver                        0x000000010ce62378 chromedriver + 6599544
+19  chromedriver                        0x000000010ce62535 chromedriver + 6599989
+20  chromedriver                        0x000000010ce71868 chromedriver + 6662248
+21  libsystem_pthread.dylib             0x00007ff80b4fe1d3 _pthread_start + 125
+22  libsystem_pthread.dylib             0x00007ff80b4f9bd3 thread_start + 15
+
+2024-12-08 19:30:59,469 - INFO - enable_captions - Captions enabled.
+2024-12-08 19:31:00,034 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:31:00,034 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu?_meeting_joined_20241208_193059.png
+2024-12-08 19:31:00,038 - INFO - capture_captions - Captions will be saved to: ./captions.txt
+2024-12-08 19:31:00,038 - INFO - capture_captions - Started capturing captions.
+2024-12-08 19:31:00,440 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:31:00,441 - WARNING - capture_captions - No captions found.
+2024-12-08 19:31:00,441 - INFO - take_screenshot - Screenshot saved: ./screenshots/dge-dfcs-ywu?_final_state_20241208_193100.png
+2024-12-08 19:31:00,444 - WARNING - _put_conn - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-12-08 19:31:00,565 - INFO - continuous_modal_handler - Closed modal: button[jsname="EszDEe"]
+2024-12-08 19:31:01,444 - ERROR - join_meet_endpoint - Endpoint error: 'str' object cannot be interpreted as an integer
+2024-12-08 19:31:01,444 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:31:01] "[35m[1mPOST /join-meet HTTP/1.1[0m" 500 -
+2024-12-08 19:31:16,520 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:31:16] "[33mGET /api/get-logs HTTP/1.1[0m" 404 -
+2024-12-08 19:32:44,958 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:32:44] "[33mGET /api/get-logs HTTP/1.1[0m" 404 -
+2024-12-08 19:32:50,812 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:32:50] "GET / HTTP/1.1" 200 -
+2024-12-08 19:32:50,847 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:32:50] "[33mGET /api/get-logs HTTP/1.1[0m" 404 -
