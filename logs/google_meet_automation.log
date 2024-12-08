@@ -1,0 +1,103 @@
+2024-12-08 19:06:36,999 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:06:37,177 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:06:37,186 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:06:38,211 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/config/logging_config.py', reloading
+2024-12-08 19:06:38,489 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:06:38,594 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:06:38,601 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:07:20,410 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:07:20,534 - INFO - _log - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.85:5000
+2024-12-08 19:07:20,534 - INFO - _log - [33mPress CTRL+C to quit[0m
+2024-12-08 19:07:20,535 - INFO - _log -  * Restarting with stat
+2024-12-08 19:07:20,735 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:07:20,835 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:07:20,842 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:10:20,016 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/app/__init__.py', reloading
+2024-12-08 19:10:20,290 - INFO - _log -  * Restarting with stat
+2024-12-08 19:10:20,688 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:10:44,077 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:10:44,206 - INFO - _log - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.85:5000
+2024-12-08 19:10:44,206 - INFO - _log - [33mPress CTRL+C to quit[0m
+2024-12-08 19:10:44,207 - INFO - _log -  * Restarting with stat
+2024-12-08 19:10:44,406 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:10:44,505 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:10:44,513 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:11:06,104 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:11:06] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2024-12-08 19:11:06,182 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:11:06] "[36mGET /health?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-08 19:11:06,183 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:11:06] "[36mGET /health?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-08 19:11:06,251 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:11:06] "GET /health?__debugger__=yes&cmd=resource&f=console.png&s=53VFpaCTZDYP3KHGF94W HTTP/1.1" 200 -
+2024-12-08 19:11:06,368 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:11:06] "[36mGET /health?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-08 19:11:22,991 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:11:22] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2024-12-08 19:11:23,013 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:11:23] "[36mGET /health?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-08 19:11:23,016 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:11:23] "[36mGET /health?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-08 19:11:23,031 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:11:23] "[36mGET /health?__debugger__=yes&cmd=resource&f=console.png&s=53VFpaCTZDYP3KHGF94W HTTP/1.1[0m" 304 -
+2024-12-08 19:11:23,065 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:11:23] "[36mGET /health?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-08 19:12:22,114 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/app/routes.py', reloading
+2024-12-08 19:12:22,191 - INFO - _log -  * Restarting with stat
+2024-12-08 19:12:22,466 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:12:22,577 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:12:22,584 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:12:26,276 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:12:26] "GET /health HTTP/1.1" 200 -
+2024-12-08 19:12:26,350 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:12:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-08 19:12:32,651 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/app/routes.py', reloading
+2024-12-08 19:12:32,734 - INFO - _log -  * Restarting with stat
+2024-12-08 19:12:32,962 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:12:33,073 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:12:33,082 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:12:58,248 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/app/routes.py', reloading
+2024-12-08 19:12:58,324 - INFO - _log -  * Restarting with stat
+2024-12-08 19:12:58,558 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:12:58,799 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:12:58,821 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:13:07,882 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/app/routes.py', reloading
+2024-12-08 19:13:07,973 - INFO - _log -  * Restarting with stat
+2024-12-08 19:13:08,224 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:13:08,324 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:13:08,332 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:13:15,398 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/app/routes.py', reloading
+2024-12-08 19:13:15,480 - INFO - _log -  * Restarting with stat
+2024-12-08 19:13:15,749 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:13:15,866 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:13:15,873 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:13:18,905 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/app/routes.py', reloading
+2024-12-08 19:13:18,981 - INFO - _log -  * Restarting with stat
+2024-12-08 19:13:19,223 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:13:19,358 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:13:19,365 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:13:28,430 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/app/routes.py', reloading
+2024-12-08 19:13:28,510 - INFO - _log -  * Restarting with stat
+2024-12-08 19:13:28,729 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:13:28,835 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:13:28,845 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:13:37,197 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:13:37] "GET /health HTTP/1.1" 200 -
+2024-12-08 19:13:38,135 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:13:38] "GET /health HTTP/1.1" 200 -
+2024-12-08 19:13:38,875 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:13:38] "GET /health HTTP/1.1" 200 -
+2024-12-08 19:13:39,402 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:13:39] "GET /health HTTP/1.1" 200 -
+2024-12-08 19:14:46,356 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:14:46] "GET /health HTTP/1.1" 200 -
+2024-12-08 19:16:09,160 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:16:09] "GET /health HTTP/1.1" 200 -
+2024-12-08 19:16:12,870 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:16:12] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-08 19:16:15,023 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:16:15] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-08 19:16:24,223 - INFO - _log -  * Detected change in '/Users/ankit/development/Google-Meet-Bot/app/routes.py', reloading
+2024-12-08 19:16:24,302 - INFO - _log -  * Restarting with stat
+2024-12-08 19:16:24,612 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:16:42,291 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:17:42,863 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:18:37,459 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:18:37,575 - INFO - _log - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.85:5000
+2024-12-08 19:18:37,575 - INFO - _log - [33mPress CTRL+C to quit[0m
+2024-12-08 19:18:37,576 - INFO - _log -  * Restarting with stat
+2024-12-08 19:18:37,775 - INFO - configure_logging - Logging configured successfully. Logs will be stored in the 'logs' folder.
+2024-12-08 19:18:37,876 - WARNING - _log -  * Debugger is active!
+2024-12-08 19:18:37,886 - INFO - _log -  * Debugger PIN: 569-617-137
+2024-12-08 19:18:43,472 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:18:43] "GET / HTTP/1.1" 200 -
+2024-12-08 19:18:45,801 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:18:45] "GET / HTTP/1.1" 200 -
+2024-12-08 19:19:45,807 - INFO - _log - 127.0.0.1 - - [08/Dec/2024 19:19:45] "GET / HTTP/1.1" 200 -
