@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 
 class GoogleMeetAutomation:
-    def __init__(self, headless=False):
+    def __init__(self, headless=True):
         """
         Initialize the Google Meet automation with configurable browser options
 
