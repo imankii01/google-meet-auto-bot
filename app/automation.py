@@ -211,7 +211,6 @@ class GoogleMeetAutomation:
             # Wait for page to load completely
             time.sleep(5)
             # Mute mic and turn off camera
-            self.toggle_audio_video()
             print("Start Counting off caption")
             time.sleep(5)
             # Enable captions
@@ -237,7 +236,6 @@ class GoogleMeetAutomation:
             # Wait for page to load completely
             time.sleep(5)
             # Mute mic and turn off camera
-            self.toggle_audio_video()
             print("Start Counting off caption")
             time.sleep(5)
             # Enable captions
@@ -264,9 +262,6 @@ class GoogleMeetAutomation:
             if captions_thread:
                 captions_thread.join()
 
-            # Leave meeting if still connected
-            # self.leave_meeting()
-
     def _check_meeting_join(self):
         """
         Check if meeting has been successfully joined
@@ -282,27 +277,6 @@ class GoogleMeetAutomation:
             return True
         except Exception:
             return False
-
-    def toggle_audio_video(self):
-        """Toggle microphone and camera off"""
-        try:
-            mic_button = WebDriverWait(self.driver, 5).until(
-                EC.element_to_be_clickable(
-                    (By.CSS_SELECTOR, 'div[jscontroller="t2mBxb"]')
-                )
-            )
-            mic_button.click()
-
-            cam_button = WebDriverWait(self.driver, 5).until(
-                EC.element_to_be_clickable(
-                    (By.CSS_SELECTOR, 'div[jscontroller="bwqwSd"]')
-                )
-            )
-            cam_button.click()
-
-            logger.info("Microphone and camera turned off")
-        except Exception as e:
-            logger.warning(f"Failed to toggle audio/video: {e}")
 
     def enable_captions(self):
         """Enable captions in the meeting"""
@@ -347,17 +321,3 @@ class GoogleMeetAutomation:
                         time.sleep(1)
         except Exception as e:
             logger.error(f"Error capturing captions: {e}")
-
-    def leave_meeting(self):
-        """Leave the Google Meet"""
-        try:
-            leave_button = WebDriverWait(self.driver, 5).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, 'div[jsname="v67aGc"]'))
-            )
-            leave_button.click()
-            logger.info("Left the meeting")
-        except Exception as e:
-            logger.warning(f"Failed to leave meeting: {e}")
-        finally:
-            if self.driver:
-                self.driver.quit()

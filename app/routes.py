@@ -7,6 +7,7 @@ api = Blueprint("api", __name__)
 
 logger = logging.getLogger(__name__)
 
+
 @api.route("/join-meet", methods=["POST"])
 def join_meet_endpoint():
     """
