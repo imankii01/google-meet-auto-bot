@@ -1,10 +1,12 @@
 import os
 import random
 import time
+import uuid
 import logging
 import threading
 import traceback
 from datetime import datetime
+import pymongo
 from flask import Flask, request, jsonify, Response
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -22,13 +24,18 @@ logger = logging.getLogger(__name__)
 
 
 class GoogleMeetAutomation:
-    def __init__(self, headless=True):
+    def __init__(self, headless=False):
         """
         Initialize the Google Meet automation with configurable browser options
 
         :param headless: Run browser in headless mode if True
         """
+        self.bot_id = str(uuid.uuid4())
+        self.status = "initialized"
         self.driver = None
+        self.mongo_client = pymongo.MongoClient("mongodb+srv://codewithankit047:nVhYb1cI7bl1VXdy@cluster0.fnsfc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+        self.db = self.mongo_client["google_meet_bot"]
+
         self.screenshot_folder = "./screenshots"
         self.captions_file = "./captions.txt"
         self.setup_browser(headless)
@@ -74,6 +81,17 @@ class GoogleMeetAutomation:
             filename = f"{self.screenshot_folder}/{meet_id}_{step_name}_{timestamp}.png"
 
             self.driver.save_screenshot(filename)
+            # Save to MongoDB
+            with open(filename, "rb") as image_file:
+                screenshot_data = {
+                    "bot_id": self.bot_id,
+                    "step_name": step_name,
+                    "meet_link": meet_link,
+                    "timestamp": datetime.now(),
+                    "screenshot": image_file.read(),
+                }
+                self.db.screenshots.insert_one(screenshot_data)
+
             logger.info(f"Screenshot saved: {filename}")
         except Exception as e:
             logger.error(f"Screenshot capture failed: {e}")
@@ -85,14 +103,13 @@ class GoogleMeetAutomation:
         :param stop_event: Threading event to stop the handler
         """
         modal_selectors = [
-            'button[jsname="m9ZlFb"]',  # Close Icon
-            'button[jsname="S5tZuc"]',  # Close Icon
-            'button[jsname="EszDEe"]',  # Got it
-            'button[data-mdc-dialog-action="cancel"]',  # Dismiss modal
-            'button[jsname="V67aGc"]',  # Continue without signing in
-            'button[jsname="Jf6fmb"]',  # Got it on the next modal
-            'button[jsname="Qx7uuf"]',  # Join now
-            # 'button[jsname="r8qRAd"]',      # caption now
+            'button[jsname="m9ZlFb"]',
+            'button[jsname="S5tZuc"]',
+            'button[jsname="EszDEe"]',
+            'button[data-mdc-dialog-action="cancel"]',
+            'button[jsname="V67aGc"]',
+            'button[jsname="Jf6fmb"]',
+            'button[jsname="Qx7uuf"]',
         ]
 
         while not stop_event.is_set():
@@ -120,28 +137,24 @@ class GoogleMeetAutomation:
         :param meeting_duration: Duration to stay in meeting (minutes)
         :return: Dictionary with join status
         """
+        self.status = "joining"
         stop_modal_event = threading.Event()
         modal_thread = None
         captions_thread = None
         stop_captions_event = threading.Event()
         try:
-            # Navigate to meet link
             self.driver.get(meet_link)
             self.take_screenshot("initial_page", meet_link)
 
-            # Start continuous modal handler
             modal_thread = threading.Thread(
                 target=self.continuous_modal_handler, args=(stop_modal_event,)
             )
             modal_thread.daemon = True
             modal_thread.start()
 
-            # Wait for page to load completely
             time.sleep(3)
 
-            # Enhanced name input handling
             try:
-                # Use JavaScript to enter name (bypassing potential overlay issues)
                 name_input = WebDriverWait(self.driver, 10).until(
                     EC.presence_of_element_located(
                         (By.CSS_SELECTOR, 'input[jsname="YPqjbf"]')
@@ -151,7 +164,6 @@ class GoogleMeetAutomation:
                     "arguments[0].value = 'Mentorpal.ai';", name_input
                 )
 
-                # Force trigger input events
                 self.driver.execute_script(
                     """
                     var input = arguments[0];
@@ -163,32 +175,23 @@ class GoogleMeetAutomation:
             except Exception as e:
                 logger.warning(f"Could not enter guest name: {e}")
 
-            # Advanced join button interaction
             try:
-                # Try multiple strategies to click join button
                 join_selectors = [
-                    'button[jsname="Qx7uuf"]',  # Primary selector
-                    'div[jsname="GGAcbc"]',  # Alternative selector
-                    ".UywwFc-LgbsSe",  # Class-based selector
+                    'button[jsname="Qx7uuf"]',
+                    'div[jsname="GGAcbc"]',
+                    ".UywwFc-LgbsSe",
                 ]
 
                 join_success = False
                 for selector in join_selectors:
                     try:
-                        # Use JavaScript click method
                         join_button = WebDriverWait(self.driver, 5).until(
                             EC.presence_of_element_located((By.CSS_SELECTOR, selector))
                         )
-
-                        # Multiple interaction strategies
                         self.driver.execute_script("arguments[0].click();", join_button)
-
-                        # Wait and verify
                         if self._check_meeting_join():
                             join_success = True
                             break
-
-                        # Backup: ActionChains click
                         ActionChains(self.driver).move_to_element(
                             join_button
                         ).click().perform()
@@ -208,24 +211,16 @@ class GoogleMeetAutomation:
                 logger.error(f"Meeting join button click failed: {e}")
                 raise
 
-            # Wait for page to load completely
             time.sleep(5)
-            # Mute mic and turn off camera
             print("Start Counting off caption")
             time.sleep(5)
-            # Enable captions
             self.enable_captions()
 
-            # Take screenshot after joining
             self.take_screenshot("meeting_joined", meet_link)
-            # Start capturing captions
             captions_thread = threading.Thread(
-                target=self.capture_captions, args=(stop_captions_event,)
+                target=self.capture_captions, args=(stop_captions_event,meet_link)
             )
             captions_thread.start()
-
-            # Stay in meeting for the specified duration
-            # Run meeting for specified duration
             time.sleep(meeting_duration * 60)
 
             return {"status": "success", "message": "Meeting joined successfully"}
@@ -233,30 +228,23 @@ class GoogleMeetAutomation:
         except Exception as e:
             logger.error(f"Meeting join failed: {e}")
             logger.error(traceback.format_exc())
-            # Wait for page to load completely
             time.sleep(5)
-            # Mute mic and turn off camera
             print("Start Counting off caption")
             time.sleep(5)
-            # Enable captions
             self.enable_captions()
 
-            # Take screenshot after joining
             self.take_screenshot("meeting_joined", meet_link)
             captions_thread = threading.Thread(
-                target=self.capture_captions, args=(stop_captions_event,)
+                target=self.capture_captions, args=(stop_captions_event,meet_link)
             )
             captions_thread.start()
-            # Run meeting for specified duration
             time.sleep(meeting_duration * 60)
 
             return {"status": "success", "message": "Meeting joined successfully"}
 
         finally:
-            # Stop modal handling thread
             stop_modal_event.set()
 
-            # Take final screenshot
             self.take_screenshot("final_state", meet_link)
             stop_captions_event.set()
             if captions_thread:
@@ -289,7 +277,7 @@ class GoogleMeetAutomation:
         except Exception as e:
             logger.error(f"Failed to enable captions: {e}")
 
-    def capture_captions(self, stop_event):
+    def capture_captions(self, stop_event,meet_link):
         """Capture captions in real-time and save to a file."""
         try:
             os.makedirs(os.path.dirname(self.captions_file), exist_ok=True)
@@ -299,7 +287,6 @@ class GoogleMeetAutomation:
                 logger.info("Started capturing captions.")
                 while not stop_event.is_set():
                     try:
-                        # Use the updated CSS selector to capture captions
                         captions = self.driver.find_elements(
                             By.CSS_SELECTOR,
                             'div[jsname="YSxPC"] div[jsname="tgaKEf"] span',
@@ -308,14 +295,29 @@ class GoogleMeetAutomation:
                             logger.debug(f"Captions found: {len(captions)}")
                             for caption in captions:
                                 text = caption.text.strip()
-                                if text:  # Only write non-empty text
+                                if text:
                                     f.write(text + "\n")
                                     f.flush()
                                 else:
                                     logger.warning("Empty caption found.")
                         else:
                             logger.warning("No captions found.")
-                        time.sleep(1)  # Add delay to reduce the load on the browser
+
+                        caption_documents = [
+                            {
+                                "bot_id": self.bot_id,
+                                "meet_link": meet_link,
+                                "timestamp": datetime.now(),
+                                "text": caption.text.strip(),
+                            }
+                            for caption in captions
+                            if caption.text.strip()
+                        ]
+
+                        if caption_documents:
+                            self.db.captions.insert_many(caption_documents)
+
+                        time.sleep(1)
                     except Exception as e:
                         logger.warning(f"Error while capturing captions: {e}")
                         time.sleep(1)
